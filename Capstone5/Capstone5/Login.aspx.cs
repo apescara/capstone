@@ -13,17 +13,39 @@ namespace Capstone5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+          if(!Page.IsPostBack)
+            {
+                Session["UnderSession"] = null;
+            }
 
         }
 
-        protected void txtPassword_TextChanged(object sender, EventArgs e)
+        protected void LoginUser_Authenticate(object sender, AuthenticateEventArgs e)
         {
+            bool auth = Membership.ValidateUser(LoginUser.UserName, LoginUser.Password);
 
+            if(auth)
+            {
+                Usuario objUsuario = UsuarioBL.getInstance().SystemAccess(LoginUser.UserName, LoginUser.Password);
+                if (objUsuario != null)
+                {
+                    SessionManager = new SessionManager(Session);
+                    SessionManager.UserSession = objUsuario.ID.ToString();
+
+                    FormsAuthentication.RedirectFromLoginPage(LoginUser.UserName, false);
+                }
+                else
+                {
+                    Response.Write
+                }
+            }
         }
+
+
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            Usuario objUsuario = UsuarioBL.getInstance().SystemAccess(txtUsuario.Text, txtPassword.Text);
+            Usuario objUsuario = UsuarioBL.getInstance().SystemAccess(LoginUser.UserName, LoginUser.Password);
             if(objUsuario != null)
             {
                 Response.Write("<script>alert('USUARIO CORRECTO')</script>");
