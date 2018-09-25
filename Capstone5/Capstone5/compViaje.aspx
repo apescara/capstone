@@ -17,7 +17,7 @@
                             <br />
                                 <br />
                             </label>
-                         <asp:CheckBoxList ID="CheckBoxList1" runat="server" RepeatDirection="Horizontal" Height="16px" Width="679px">
+                         <asp:CheckBoxList ID="CheckBoxList1" runat="server" RepeatDirection="Horizontal" Height="16px" Width="569px">
                              <asp:ListItem Text="Rechazo" Value="Rechazo"></asp:ListItem>
                             
                              <asp:ListItem Text="Recepción" Value="Recepcion"></asp:ListItem>
