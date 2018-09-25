@@ -24,7 +24,7 @@
             </div>
         
         <div class="form-group">
-                      <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Ingrese Contraseña..." OnTextChanged="txtPassword_TextChanged"></asp:TextBox>
+                      <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Ingrese Contraseña..." OnTextChanged="txtPassword_TextChanged" TextMode="Password"></asp:TextBox>
 
         </div>
             </div>

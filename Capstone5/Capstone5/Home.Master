@@ -106,7 +106,7 @@
 <body class="skin-blue">
     <header class="header">
         <!-- cabecera pag maestra -->
-         <a href="PanelGeneral.aspx" class="logo">Pto Azul</a>
+         <a href="PanelGeneral.aspx" class="logo"><img src="img/logo-puntoazul.png" class="container"/></a>
         <nav class="navbar navbar-static-top" role="navigation">
         <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle Navigation</span>
@@ -164,7 +164,12 @@
                         </ul>
                     </li>
                      
-                    
+                    <li >
+                        <a href="Login.aspx">
+                            <i class="fa fa-sign-out-alt"></i>
+                            <span>Cerrar Sesión</span>
+                        </a>
+                    </li>
                 </ul>
             </section>
 
