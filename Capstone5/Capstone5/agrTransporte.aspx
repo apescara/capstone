@@ -34,7 +34,14 @@
                             <label>EMAIL DE CONTACTO</label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox5" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="TextBox5" runat="server" Text="" CssClass="form-control" TextMode="Email"></asp:TextBox>
+                        </div>
+
+                        <div class="form-group">
+                            <label>TELÉFONO DE CONTACTO</label>
+                        </div>
+                        <div class="form-group">
+                          <asp:TextBox ID="TextBox4" runat="server" Text="" CssClass="form-control" TextMode="Phone"></asp:TextBox>
                         </div>
 
                         
