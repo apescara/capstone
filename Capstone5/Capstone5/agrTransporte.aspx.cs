@@ -43,7 +43,7 @@ namespace Capstone5
             return objEmp;
         }
 
-        protected void BtnAgregar(object sender, EventArgs e)
+        protected void BtnAgregar_Click(object sender, EventArgs e)
         {
             //registro
             empTransporte objEmp = GetEntity();
@@ -58,5 +58,6 @@ namespace Capstone5
                 Response.Write("<script>alert('REGISTRO INCORRECTO')</script>");
             }
         }
+
     }
 }
