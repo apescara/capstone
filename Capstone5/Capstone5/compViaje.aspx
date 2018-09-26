@@ -117,7 +117,7 @@
                             <label>PATENTE </label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox2" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                             <asp:DropDownList ID="DropDownList5" runat="server" CssClass="form-control"></asp:DropDownList>
                         </div>
 
                         <div class="form-group">

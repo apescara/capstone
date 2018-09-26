@@ -76,13 +76,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
         
         /// <summary>
-        /// TextBox2 control.
+        /// DropDownList5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
         
         /// <summary>
         /// DropDownList4 control.
