@@ -15,18 +15,7 @@ namespace Capstone5
         {
             if (!Page.IsPostBack)
             {
-                //registro
-                empTransporte objEmp = GetEntity();
-                //enviar a logic
-                bool response = empTransporteBL.getInstance().RegistrarEmpTransporte(objEmp);
-                if(response == true)
-                {
-                    Response.Write("<script>alert('REGISTRO CORRECTO')</script>");
-                }
-                else
-                {
-                    Response.Write("<script>alert('REGISTRO INCORRECTO')</script>");
-                }
+
             }
         }
 
