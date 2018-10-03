@@ -395,6 +395,7 @@
     <Content Include="agrConductor.aspx" />
     <Content Include="agrProveedor.aspx" />
     <Content Include="agrRecepcionista.aspx" />
+    <Content Include="WebForm7.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="agrTransporte.aspx.cs">
@@ -467,6 +468,13 @@
     </Compile>
     <Compile Include="agrRecepcionista.aspx.designer.cs">
       <DependentUpon>agrRecepcionista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
