@@ -43,10 +43,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EO.Web, Version=18.2.74.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Essential Objects\EO.Total 2018\EO.Web.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -242,7 +238,6 @@
     <Content Include="img\bootstrap-colorpicker\hue-horizontal.png" />
     <Content Include="img\bootstrap-colorpicker\hue.png" />
     <Content Include="img\bootstrap-colorpicker\saturation.png" />
-    <Content Include="img\calendar.gif" />
     <Content Include="img\credit\american-express.png" />
     <Content Include="img\credit\cirrus.png" />
     <Content Include="img\credit\mastercard.png" />
@@ -400,7 +395,6 @@
     <Content Include="agrConductor.aspx" />
     <Content Include="agrProveedor.aspx" />
     <Content Include="agrRecepcionista.aspx" />
-    <Content Include="CompViaje2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="agrTransporte.aspx.cs">
@@ -473,13 +467,6 @@
     </Compile>
     <Compile Include="agrRecepcionista.aspx.designer.cs">
       <DependentUpon>agrRecepcionista.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CompViaje2.aspx.cs">
-      <DependentUpon>CompViaje2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CompViaje2.aspx.designer.cs">
-      <DependentUpon>CompViaje2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
