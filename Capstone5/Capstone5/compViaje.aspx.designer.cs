@@ -13,15 +13,6 @@ namespace Capstone5 {
     public partial class compViaje {
         
         /// <summary>
-        /// CheckBoxList1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
-        
-        /// <summary>
         /// TextBox5 control.
         /// </summary>
         /// <remarks>
@@ -38,24 +29,6 @@ namespace Capstone5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownList6;
-        
-        /// <summary>
-        /// TextBox1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
-        /// <summary>
-        /// txtEditarFecha control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEditarFecha;
         
         /// <summary>
         /// DropDownList1 control.
@@ -94,13 +67,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList4;
         
         /// <summary>
-        /// BtnAgregar control.
+        /// BtnSiguiente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAgregar;
+        protected global::System.Web.UI.WebControls.Button BtnSiguiente;
         
         /// <summary>
         /// BtnCancelar control.
