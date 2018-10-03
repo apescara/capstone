@@ -22,15 +22,6 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList ET;
         
         /// <summary>
-        /// BaseDatosPtoAzul control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource BaseDatosPtoAzul;
-        
-        /// <summary>
         /// TextBox1 control.
         /// </summary>
         /// <remarks>

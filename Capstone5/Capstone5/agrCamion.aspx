@@ -14,8 +14,7 @@
                             <label>EMPRESA DE TRANSPORTE</label>
                         </div>
                         <div class="form-group">
-                          <asp:DropDownList ID="ET" runat="server" CssClass="form-control" DataSourceID="BaseDatosPtoAzul" DataTextField="nombre" DataValueField="idEmpTransporte"></asp:DropDownList>
-                            <asp:SqlDataSource ID="BaseDatosPtoAzul" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idEmpTransporte], [nombre] FROM [empresasTransporte]"></asp:SqlDataSource>
+                          <asp:DropDownList ID="ET" runat="server" CssClass="form-control"></asp:DropDownList>
                         </div>
                         <div class="form-group">
                             <label>PATENTE </label>
@@ -28,20 +27,14 @@
                             <label>PROCEDENCIA </label>
                         </div>
                         <div class="form-group">
-                         <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
-                             <asp:ListItem Value="1">INTERNO</asp:ListItem>
-                             <asp:ListItem Value="0">EXTERNO</asp:ListItem>
-                            </asp:DropDownList>
+                         <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control"></asp:DropDownList>
                         </div>
 
                         <div class="form-group">
                             <label>TIPO DE CAMION </label>
                         </div>
                         <div class="form-group">
-                          <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control">
-                              <asp:ListItem Value="1">CAMIÓN</asp:ListItem>
-                              <asp:ListItem Value="0">RAMPLA</asp:ListItem>
-                            </asp:DropDownList>
+                          <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control"></asp:DropDownList>
                         </div>
 
                         <div class="form-group">
