@@ -6,39 +6,7 @@
     <section class="¨content-header">
         <h1 style="text-align:center"> Nuevo Comprobante de Viaje </h1>
     </section>
-    <section class="content">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="box box-primary">
-                    <div class="box-body">
-
-                        <div class="form-group">
-                            <label>INGRESE TIPO DE COMPROBANTE 
-                            <br />
-                                <br />
-                            </label>
-                         <asp:CheckBoxList ID="CheckBoxList1" runat="server" RepeatDirection="Horizontal" Height="16px" Width="569px">
-                             <asp:ListItem Text="Rechazo" Value="Rechazo"></asp:ListItem>
-                            
-                             <asp:ListItem Text="Recepción" Value="Recepcion"></asp:ListItem>
-                             <asp:ListItem Text="Despacho" Value="Despacho"></asp:ListItem>
-                             <asp:ListItem Text="Materiales" Value="Materiales"></asp:ListItem>
-                         </asp:CheckBoxList>
-                        </div>
-
-                       
-
-
-
-                     </div>
-            </div>
-             </div>
-        </div>
-
-        
-         
-            
-    </section>
+   
 
     <section class="content">
         <div class="row">
@@ -137,11 +105,11 @@
             <div align="center">
                 <table>
                     <tr>
-                        <td> <asp:Button ID="BtnAgregar" runat="server" CssClass=" btn btn-primary" Text="Crear" Width="200px"/></td>
+                        <td> <asp:Button ID="BtnSiguiente" runat="server" CssClass=" btn btn-primary" Text="Siguiente" Width="200px" OnClick="BtnSiguiente_Click"/></td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;
 
                         </td>
-                        <td> <asp:Button ID="BtnCancelar" runat="server" CssClass=" btn btn-danger" Text="Cancelar" Width="200px"/></td>
+                        <td> <asp:Button ID="BtnCancelar" runat="server" CssClass=" btn btn-danger" Text="Cancelar" Width="200px" OnClick="BtnCancelar_Click"/></td>
                     </tr>
                 </table>
         </div>
