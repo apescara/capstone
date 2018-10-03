@@ -26,18 +26,17 @@
                          <asp:DropDownList ID="DropDownList6" runat="server" CssClass="form-control"></asp:DropDownList>
                         </div>
 
+                     
                         <div class="form-group">
                             <label>FECHA DE DOCUMENTO </label>
                         </div>
-                        <div class="form-group">
+                       <div class="form-group">
                             <div class="form-group">
                        
                         <div class="input-group">
-                            <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
-                            </div>
-                            <asp:TextBox ID="TextBox1" CssClass="form-control" data-inputmask="'alias': 'dd/mm/yyyy'"
-                                data-mask="" runat="server"></asp:TextBox>
+                            
+                            <input type="text" id="calendario2" value=""></p>
+                      
                         </div>
                     </div>
                         </div>
@@ -49,11 +48,9 @@
                             <div class="form-group">
                        
                         <div class="input-group">
-                            <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
-                            </div>
-                            <asp:TextBox ID="txtEditarFecha" CssClass="form-control" data-inputmask="'alias': 'dd/mm/yyyy'"
-                                data-mask="" runat="server"></asp:TextBox>
+                            
+                            <input type="text" id="calendario" value=""></p>
+                      
                         </div>
                     </div>
                         </div>
