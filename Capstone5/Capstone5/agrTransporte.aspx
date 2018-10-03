@@ -14,26 +14,27 @@
                             <label>NOMBRE EMPRESA </label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox2" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="nombre" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label>RAZÓN SOCIAL </label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox1" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="razonSocial" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
 
                        <div class="form-group">
                             <label>RUT EMPRESA </label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox3" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="RUT" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
 
                         <div class="form-group">
                             <label>EMAIL DE CONTACTO</label>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                           <asp:TextBox ID="TextBox5" runat="server" Text="" CssClass="form-control" TextMode="Email"></asp:TextBox>
                         </div>
 
@@ -42,6 +43,16 @@
                         </div>
                         <div class="form-group">
                           <asp:TextBox ID="TextBox4" runat="server" Text="" CssClass="form-control" TextMode="Phone"></asp:TextBox>
+=======
+                          <asp:TextBox ID="email" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                        </div>
+
+                        <div class="form-group">
+                            <label>FONO</label>
+                        </div>
+                        <div class="form-group">
+                          <asp:TextBox ID="fono" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+>>>>>>> agregar-emp-transporte
                         </div>
 
                         
@@ -57,7 +68,7 @@
             <div align="center">
                 <table>
                     <tr>
-                        <td> <asp:Button ID="BtnAgregar" runat="server" CssClass=" btn btn-primary" Text="Agregar" Width="200px"/></td>
+                        <td> <asp:Button ID="BtnAgregar" runat="server" CssClass=" btn btn-primary" Text="Agregar" Width="200px" OnClick ="BtnAgregar_Click"/></td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;
 
                         </td>

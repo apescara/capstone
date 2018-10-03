@@ -1389,6 +1389,8 @@ body > .header .logo .icon {
 }
 .box.box-primary {
   border-top-color: #3c8dbc;
+    top: -14px;
+    left: 7px;
 }
 .box.box-info {
   border-top-color: #00c0ef;
