@@ -13,5 +13,17 @@ namespace Capstone5
         {
 
         }
+
+        
+
+        protected void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PanelGeneral.aspx");
+        }
+
+        protected void BtnSiguiente_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CompViaje2.aspx");
+        }
     }
 }
