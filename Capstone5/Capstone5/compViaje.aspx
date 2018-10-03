@@ -17,7 +17,7 @@
                             <label>N° DE FOLIO</label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox5" runat="server" Text="" CssClass="form-control" ReadOnly></asp:TextBox>
+                          <asp:TextBox ID="TextBox5" runat="server" Text="" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label>RECEPCIONISTA</label>
@@ -28,32 +28,24 @@
 
                      
                         <div class="form-group">
-                            <label>FECHA DE DOCUMENTO </label>
+                            <label>FECHA DE DOCUMENTO </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <label>FECHA DE COMPROBANTE </label>
                         </div>
                        <div class="form-group">
-                            <div class="form-group">
+                            <div class="form-horizontal">
                        
                         <div class="input-group">
                             
-                            <input type="text" id="calendario2" value=""></p>
-                      
+                            <input type="text" id="calendario2" value="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <input type="text" id="calendario" value=""></p> 
+                     
                         </div>
+                                
                     </div>
                         </div>
 
-                        <div class="form-group">
-                            <label>FECHA DE COMPROBANTE </label>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group">
                        
-                        <div class="input-group">
-                            
-                            <input type="text" id="calendario" value=""></p>
-                      
-                        </div>
-                    </div>
-                        </div>
+                        
 
                       
 
