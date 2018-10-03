@@ -57,7 +57,7 @@
             <div align="center">
                 <table>
                     <tr>
-                        <td> <asp:Button ID="BtnAgregar" runat="server" CssClass=" btn btn-primary" Text="Agregar" Width="200px"/></td>
+                        <td> <asp:Button ID="BtnAgregar" runat="server" CssClass=" btn btn-primary" Text="Agregar" Width="200px" OnClick ="BtnAgregar_Click"/></td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;
 
                         </td>

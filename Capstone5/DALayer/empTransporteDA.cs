@@ -32,7 +32,7 @@ namespace DALayer
             try
             {
                 con = Connection.getInstance().DBConnection();
-                cmd = new SqlCommand("spRegistarEmpTransporte",con);
+                cmd = new SqlCommand("spRegistrarEmpTransporte",con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@prmNombre",objEmp.nombre);
                 cmd.Parameters.Add("@prmRazonSocial", objEmp.razonSocial);
