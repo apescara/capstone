@@ -10,6 +10,7 @@ namespace BLogicLayer
 {
     public class empTransporteBL
     {
+
         #region "SINGLETON"
         private static empTransporteBL empTransporte = null;
         private empTransporteBL() { }
