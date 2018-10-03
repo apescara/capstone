@@ -14,7 +14,7 @@
 </head>
 <body class="bg-black">
     <div class="form-box" id="login-box">
-     <div class="header bg-blue"> Iniciar Sesión <img src="http://ptoazul.cl/undostres/wp-content/uploads/2017/02/cropped-favicon-puntoazul-300x300.png" alt="" style="width: 80px; height: 50px;"/>
+     <div class="header bg-blue"> Iniciar Sesión <img src="http://ptoazul.cl/undostres/wp-content/uploads/2017/02/cropped-favicon-puntoazul-300x300.png" alt="" style="width: 50px; height: 50px;"/>
 
 </div>
     <form id="form1" runat="server">
