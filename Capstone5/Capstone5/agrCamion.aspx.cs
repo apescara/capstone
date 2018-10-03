@@ -22,8 +22,8 @@ namespace Capstone5
             objCamion.idCamion = 0;
             objCamion.patente = patente.Text;
             objCamion.idEmpTransporte = Convert.ToInt32(EmpTrasnporte.Text);
-            objCamion.internoExterno = Convert.ToByte(internoExterno.Text);
-            objCamion.camionRampla = Convert.ToByte(camionRampla.Text);
+            objCamion.internoExterno = Convert.ToSByte(internoExterno.Text);
+            objCamion.camionRampla = Convert.ToSByte(camionRampla.Text);
             objCamion.capacidad = Convert.ToInt32(capacidad.Text);
 
             return objCamion;
