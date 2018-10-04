@@ -32,27 +32,15 @@
 
                         <div class="form-group">
                             <label>EMAIL DE CONTACTO</label>
-                        </div>
-                        <div class="form-group">
-<<<<<<< HEAD
-                          <asp:TextBox ID="TextBox5" runat="server" Text="" CssClass="form-control" TextMode="Email"></asp:TextBox>
+                            <asp:TextBox ID="email" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
 
-                        <div class="form-group">
-                            <label>TELÉFONO DE CONTACTO</label>
-                        </div>
-                        <div class="form-group">
-                          <asp:TextBox ID="TextBox4" runat="server" Text="" CssClass="form-control" TextMode="Phone"></asp:TextBox>
-=======
-                          <asp:TextBox ID="email" runat="server" Text="" CssClass="form-control"></asp:TextBox>
-                        </div>
 
                         <div class="form-group">
                             <label>FONO</label>
                         </div>
                         <div class="form-group">
                           <asp:TextBox ID="fono" runat="server" Text="" CssClass="form-control"></asp:TextBox>
->>>>>>> agregar-emp-transporte
                         </div>
 
                         
@@ -76,6 +64,32 @@
                     </tr>
                 </table>
         </div>
-            
+     </section>
+     <section class="content">
+        <div class ="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Lista de Empresas</h3>
+                    </div>
+                    <div class="box-body table-responsive">
+                        <table id="tbl_empresasTransporte" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Razon Social</th>
+                                    <th>RUT</th>
+                                    <th>Email de contacto</th>
+                                    <th>Fono de contacto</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbl_body_empresas">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </asp:Content>

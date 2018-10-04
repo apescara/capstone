@@ -54,5 +54,47 @@ namespace DALayer
             }
             return response;
         }
+
+        public List<empTransporte> listarEmpTransporte()
+        {
+            List<empTransporte> Lista = new List<empTransporte>();
+            SqlConnection con = null;
+            SqlCommand cmd = null;
+            SqlDataReader dr = null;
+
+            try
+            {
+                con = Connection.getInstance().DBConnection();
+                cmd = new SqlCommand("spListarEmpTransporte", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    //Se cran los objetoss
+                    empTransporte objEmpTrans = new empTransporte();
+                    objEmpTrans.idEmpTransporte = Convert.ToInt32(dr["idEmpTransporte"].ToString());
+                    objEmpTrans.nombre = dr["nombre"].ToString();
+                    objEmpTrans.razonSocial = dr["razonSocial"].ToString();
+                    objEmpTrans.RUT = dr["RUT"].ToString();
+                    objEmpTrans.email = dr["email"].ToString();
+                    objEmpTrans.fono = Convert.ToInt32(dr["fono"].ToString());
+
+                    //se suman a la lista
+                    Lista.Add(objEmpTrans);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+            finally
+            {
+                con.Close();
+            }
+            return Lista;
+        }
+
+
     }
 }

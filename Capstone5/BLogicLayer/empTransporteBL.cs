@@ -34,5 +34,17 @@ namespace BLogicLayer
                 throw ex;
             }
         }
+
+        public List<empTransporte> listarEmpTransporte()
+        {
+            try
+            {
+                return empTransporteDA.getInstance().listarEmpTransporte();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
