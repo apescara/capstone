@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BLogicLayer;
 using EntitiesLayer;
+using System.Web.Script.Serialization;
 
 namespace Capstone5
 {
@@ -17,6 +19,21 @@ namespace Capstone5
             {
 
             }
+        }
+        [WebMethod] 
+        public static List<empTransporte> ListarEmpresas()
+        {
+            List<empTransporte> Lista = null;
+            try
+            {
+                Lista = empTransporteBL.getInstance().ListarEmpTransporte();
+            }
+            catch(Exception ex)
+            {
+                Lista = null;
+                throw ex;
+            }
+            return Lista;
         }
 
         private empTransporte GetEntity()

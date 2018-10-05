@@ -55,7 +55,7 @@ namespace DALayer
             return response;
         }
 
-        public List<empTransporte> listarEmpTransporte()
+        public List<empTransporte> ListarEmpTransporte()
         {
             List<empTransporte> Lista = new List<empTransporte>();
             SqlConnection con = null;

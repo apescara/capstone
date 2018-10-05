@@ -76,6 +76,7 @@
                         <table id="tbl_empresasTransporte" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Nombre</th>
                                     <th>Razon Social</th>
                                     <th>RUT</th>
@@ -83,7 +84,7 @@
                                     <th>Fono de contacto</th>
                                 </tr>
                             </thead>
-                            <tbody id="tbl_body_empresas">
+                            <tbody id="tbl_body_table">
 
                             </tbody>
                         </table>

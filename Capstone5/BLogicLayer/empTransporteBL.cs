@@ -35,11 +35,11 @@ namespace BLogicLayer
             }
         }
 
-        public List<empTransporte> listarEmpTransporte()
+        public List<empTransporte> ListarEmpTransporte()
         {
             try
             {
-                return empTransporteDA.getInstance().listarEmpTransporte();
+                return empTransporteDA.getInstance().ListarEmpTransporte();
             }
             catch(Exception ex)
             {
