@@ -86,19 +86,11 @@
                     <div class="box-body">
 
                         <div class="form-group">
-                            <label>INGRESE INFORMACIÓN DE DESPACHO DE MATERIALES
+                            <label>INGRESE INFORMACIÓN DE RECEPCIÓN DE MATERIALES
                             <br />
                                 <br />
                             </label>
-                         <asp:CheckBoxList ID="CheckBoxList4" runat="server" RepeatDirection="Horizontal" Height="16px" Width="569px">
-                             <asp:ListItem Text="Rechazo" Value="Rechazo"></asp:ListItem>
-                            
-                             <asp:ListItem Text="Recepción" Value="Recepcion"></asp:ListItem>
-                             <asp:ListItem Text="Despacho" Value="Despacho"></asp:ListItem>
-                             <asp:ListItem Text="Materiales" Value="Materiales"></asp:ListItem>
-                         </asp:CheckBoxList>
-                            <br />
-                            <asp:Button ID="Button4" runat="server" Text="Confirmar" CssClass="btn btn-primary" />
+                         
                         </div>
                            </div>
                                 </div>
@@ -111,19 +103,11 @@
                     <div class="box-body">
 
                         <div class="form-group">
-                            <label>INGRESE TIPO DE COMPROBANTE 
+                            <label>INGRESE INFORMACIÓN DE RECHAZO
                             <br />
                                 <br />
                             </label>
-                         <asp:CheckBoxList ID="CheckBoxList5" runat="server" RepeatDirection="Horizontal" Height="16px" Width="569px">
-                             <asp:ListItem Text="Rechazo" Value="Rechazo"></asp:ListItem>
-                            
-                             <asp:ListItem Text="Recepción" Value="Recepcion"></asp:ListItem>
-                             <asp:ListItem Text="Despacho" Value="Despacho"></asp:ListItem>
-                             <asp:ListItem Text="Materiales" Value="Materiales"></asp:ListItem>
-                         </asp:CheckBoxList>
-                            <br />
-                            <asp:Button ID="Button5" runat="server" Text="Confirmar" CssClass="btn btn-primary" />
+                         
                         </div>
                            </div>
                                 </div>
