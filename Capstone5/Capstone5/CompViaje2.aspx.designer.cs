@@ -400,13 +400,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList17;
         
         /// <summary>
-        /// SqlDataSource9 control.
+        /// SqlDataSource25 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource9;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource25;
         
         /// <summary>
         /// DropDownList18 control.
@@ -418,13 +418,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList18;
         
         /// <summary>
-        /// SqlDataSource10 control.
+        /// origen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource10;
+        protected global::System.Web.UI.WebControls.SqlDataSource origen;
         
         /// <summary>
         /// DropDownList19 control.
@@ -436,13 +436,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList19;
         
         /// <summary>
-        /// DropDownList20 control.
+        /// TextBox46 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList20;
+        protected global::System.Web.UI.WebControls.TextBox TextBox46;
         
         /// <summary>
         /// TextBox17 control.
@@ -490,22 +490,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource11;
         
         /// <summary>
-        /// DropDownList22 control.
+        /// DropDownList49 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList22;
-        
-        /// <summary>
-        /// SqlDataSource12 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource12;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList49;
         
         /// <summary>
         /// DropDownList24 control.
@@ -580,15 +571,6 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList26;
         
         /// <summary>
-        /// SqlDataSource14 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource14;
-        
-        /// <summary>
         /// DropDownList27 control.
         /// </summary>
         /// <remarks>
@@ -598,13 +580,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList27;
         
         /// <summary>
-        /// DropDownList28 control.
+        /// TextBox47 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList28;
+        protected global::System.Web.UI.WebControls.TextBox TextBox47;
         
         /// <summary>
         /// TextBox25 control.
@@ -661,15 +643,6 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList30;
         
         /// <summary>
-        /// SqlDataSource16 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource16;
-        
-        /// <summary>
         /// DropDownList31 control.
         /// </summary>
         /// <remarks>
@@ -679,13 +652,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList31;
         
         /// <summary>
-        /// DropDownList32 control.
+        /// TextBox48 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList32;
+        protected global::System.Web.UI.WebControls.TextBox TextBox48;
         
         /// <summary>
         /// TextBox29 control.
@@ -733,31 +706,22 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource17;
         
         /// <summary>
-        /// DropDownList34 control.
+        /// DropDownList50 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList34;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList50;
         
         /// <summary>
-        /// SqlDataSource18 control.
+        /// TextBox49 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource18;
-        
-        /// <summary>
-        /// DropDownList35 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList35;
+        protected global::System.Web.UI.WebControls.TextBox TextBox49;
         
         /// <summary>
         /// DropDownList36 control.
@@ -796,31 +760,22 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource19;
         
         /// <summary>
-        /// DropDownList38 control.
+        /// DropDownList51 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList38;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList51;
         
         /// <summary>
-        /// SqlDataSource20 control.
+        /// TextBox50 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource20;
-        
-        /// <summary>
-        /// DropDownList39 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList39;
+        protected global::System.Web.UI.WebControls.TextBox TextBox50;
         
         /// <summary>
         /// DropDownList40 control.
@@ -859,31 +814,22 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource21;
         
         /// <summary>
-        /// DropDownList42 control.
+        /// DropDownList52 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList42;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList52;
         
         /// <summary>
-        /// SqlDataSource22 control.
+        /// TextBox51 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource22;
-        
-        /// <summary>
-        /// DropDownList43 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList43;
+        protected global::System.Web.UI.WebControls.TextBox TextBox51;
         
         /// <summary>
         /// DropDownList44 control.
@@ -922,31 +868,22 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource23;
         
         /// <summary>
-        /// DropDownList46 control.
+        /// DropDownList53 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList46;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList53;
         
         /// <summary>
-        /// SqlDataSource24 control.
+        /// TextBox52 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource24;
-        
-        /// <summary>
-        /// DropDownList47 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList47;
+        protected global::System.Web.UI.WebControls.TextBox TextBox52;
         
         /// <summary>
         /// DropDownList48 control.

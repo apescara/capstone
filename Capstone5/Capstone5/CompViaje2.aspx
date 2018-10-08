@@ -36,7 +36,7 @@
        
         </section>
 
-     <section class="content">
+     <section class="content" >
         <div class="row">
             <div class="col-md">
                 <div class="box box-primary">
@@ -204,20 +204,18 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td><asp:DropDownList ID="DropDownList17" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
-          <asp:SqlDataSource ID="SqlDataSource9" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores]"></asp:SqlDataSource>
+      <td><asp:DropDownList ID="DropDownList17" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
+          <asp:SqlDataSource ID="SqlDataSource25" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCliente], [nombre] FROM [clientes]"></asp:SqlDataSource>
         </td>
         
-      <td><asp:DropDownList ID="DropDownList18" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
-          <asp:SqlDataSource ID="SqlDataSource10" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCliente], [nombre] FROM [clientes]"></asp:SqlDataSource>
+      <td><asp:DropDownList ID="DropDownList18" runat="server" DataSourceID="origen" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
+          <asp:SqlDataSource ID="origen" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [nombre], [idProductor] FROM [productores]"></asp:SqlDataSource>
         </td>
       <td><asp:DropDownList ID="DropDownList19" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Si" Value="1"></asp:ListItem>
-    <asp:ListItem Text="No" Value="2"></asp:ListItem></asp:DropDownList></td>
+    <asp:ListItem Value="1">Guia</asp:ListItem>
+    <asp:ListItem Value="2">Factura</asp:ListItem></asp:DropDownList></td>
       <td>
-        <asp:DropDownList ID="DropDownList20" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Guía" Value="1"></asp:ListItem>
-    <asp:ListItem Text="Factura" Value="2"></asp:ListItem></asp:DropDownList>
+          <asp:TextBox ID="TextBox46" runat="server"></asp:TextBox>
        </td>
       <td><asp:TextBox ID="TextBox17" runat="server"></asp:TextBox></td>
         
@@ -227,11 +225,10 @@
     </tr>
     <tr>
       <th scope="row">2</th>
-       <td><asp:DropDownList ID="DropDownList21" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
+       <td><asp:DropDownList ID="DropDownList21" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource11" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores]"></asp:SqlDataSource>
         </td>
-       <td><asp:DropDownList ID="DropDownList22" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
-          <asp:SqlDataSource ID="SqlDataSource12" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCliente], [nombre] FROM [clientes]"></asp:SqlDataSource>
+       <td><asp:DropDownList ID="DropDownList49" runat="server" DataSourceID="origen" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
         </td>
       <td>
         <asp:DropDownList ID="DropDownList24" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
@@ -245,19 +242,16 @@
      <td><asp:TextBox ID="TextBox24" runat="server" TextMode="Number"></asp:TextBox></td>
     <tr>
       <th scope="row">3</th>
-       <td><asp:DropDownList ID="DropDownList25" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
+       <td><asp:DropDownList ID="DropDownList25" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource13" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores]"></asp:SqlDataSource>
         </td>
-       <td><asp:DropDownList ID="DropDownList26" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
-          <asp:SqlDataSource ID="SqlDataSource14" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCliente], [nombre] FROM [clientes]"></asp:SqlDataSource>
+       <td><asp:DropDownList ID="DropDownList26" runat="server" DataSourceID="origen" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
         </td>
       <td><asp:DropDownList ID="DropDownList27" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Si" Value="1"></asp:ListItem>
-    <asp:ListItem Text="No" Value="2"></asp:ListItem></asp:DropDownList></td>
+    <asp:ListItem Text="Guia" Value="1"></asp:ListItem>
+    <asp:ListItem Text="Factura" Value="2"></asp:ListItem></asp:DropDownList></td>
       <td>
-        <asp:DropDownList ID="DropDownList28" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Guía" Value="1"></asp:ListItem>
-    <asp:ListItem Text="Factura" Value="2"></asp:ListItem></asp:DropDownList>
+          <asp:TextBox ID="TextBox47" runat="server"></asp:TextBox>
        </td>
       <td><asp:TextBox ID="TextBox25" runat="server"></asp:TextBox></td>
         
@@ -268,19 +262,16 @@
     </tr>
        <tr>
       <th scope="row">4</th>
-       <td><asp:DropDownList ID="DropDownList29" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
+       <td><asp:DropDownList ID="DropDownList29" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource15" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores]"></asp:SqlDataSource>
         </td>
-       <td><asp:DropDownList ID="DropDownList30" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
-          <asp:SqlDataSource ID="SqlDataSource16" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCliente], [nombre] FROM [clientes]"></asp:SqlDataSource>
+       <td><asp:DropDownList ID="DropDownList30" runat="server" DataSourceID="origen" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
         </td>
       <td><asp:DropDownList ID="DropDownList31" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Si" Value="1"></asp:ListItem>
-    <asp:ListItem Text="No" Value="2"></asp:ListItem></asp:DropDownList></td>
+    <asp:ListItem Text="Guia" Value="1"></asp:ListItem>
+    <asp:ListItem Text="Factura" Value="2"></asp:ListItem></asp:DropDownList></td>
       <td>
-        <asp:DropDownList ID="DropDownList32" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Guía" Value="1"></asp:ListItem>
-    <asp:ListItem Text="Factura" Value="2"></asp:ListItem></asp:DropDownList>
+          <asp:TextBox ID="TextBox48" runat="server"></asp:TextBox>
        </td>
       <td><asp:TextBox ID="TextBox29" runat="server"></asp:TextBox></td>
         
@@ -336,16 +327,16 @@
           <asp:SqlDataSource ID="SqlDataSource17" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores]"></asp:SqlDataSource>
         </td>
         
-      <td><asp:DropDownList ID="DropDownList34" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
-          <asp:SqlDataSource ID="SqlDataSource18" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCliente], [nombre] FROM [clientes]"></asp:SqlDataSource>
-        </td>
-      <td><asp:DropDownList ID="DropDownList35" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Si" Value="1"></asp:ListItem>
-    <asp:ListItem Text="No" Value="2"></asp:ListItem></asp:DropDownList></td>
       <td>
-        <asp:DropDownList ID="DropDownList36" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
+        <asp:DropDownList ID="DropDownList50" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
     <asp:ListItem Text="Guía" Value="1"></asp:ListItem>
     <asp:ListItem Text="Factura" Value="2"></asp:ListItem></asp:DropDownList>
+        </td>
+      <td><asp:TextBox ID="TextBox49" runat="server"></asp:TextBox></td>
+      <td>
+        <asp:DropDownList ID="DropDownList36" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
+    <asp:ListItem Text="Cajas" Value="1"></asp:ListItem>
+    <asp:ListItem Text="Pallets" Value="2"></asp:ListItem></asp:DropDownList>
        </td>
       <td><asp:TextBox ID="TextBox33" runat="server"></asp:TextBox></td>
         
@@ -355,16 +346,16 @@
        <td><asp:DropDownList ID="DropDownList37" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource19" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores]"></asp:SqlDataSource>
         </td>
-       <td><asp:DropDownList ID="DropDownList38" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
-          <asp:SqlDataSource ID="SqlDataSource20" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCliente], [nombre] FROM [clientes]"></asp:SqlDataSource>
-        </td>
-      <td><asp:DropDownList ID="DropDownList39" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Si" Value="1"></asp:ListItem>
-    <asp:ListItem Text="No" Value="2"></asp:ListItem></asp:DropDownList></td>
-      <td>
-        <asp:DropDownList ID="DropDownList40" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
+       <td>
+        <asp:DropDownList ID="DropDownList51" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
     <asp:ListItem Text="Guía" Value="1"></asp:ListItem>
     <asp:ListItem Text="Factura" Value="2"></asp:ListItem></asp:DropDownList>
+        </td>
+      <td><asp:TextBox ID="TextBox50" runat="server"></asp:TextBox></td>
+      <td>
+        <asp:DropDownList ID="DropDownList40" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
+    <asp:ListItem Text="Cajas" Value="1"></asp:ListItem>
+    <asp:ListItem Text="Pallets" Value="2"></asp:ListItem></asp:DropDownList>
        </td>
       <td><asp:TextBox ID="TextBox37" runat="server"></asp:TextBox></td>
         
@@ -373,16 +364,16 @@
        <td><asp:DropDownList ID="DropDownList41" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource21" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores]"></asp:SqlDataSource>
         </td>
-       <td><asp:DropDownList ID="DropDownList42" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
-          <asp:SqlDataSource ID="SqlDataSource22" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCliente], [nombre] FROM [clientes]"></asp:SqlDataSource>
-        </td>
-      <td><asp:DropDownList ID="DropDownList43" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Si" Value="1"></asp:ListItem>
-    <asp:ListItem Text="No" Value="2"></asp:ListItem></asp:DropDownList></td>
-      <td>
-        <asp:DropDownList ID="DropDownList44" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
+       <td>
+        <asp:DropDownList ID="DropDownList52" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
     <asp:ListItem Text="Guía" Value="1"></asp:ListItem>
     <asp:ListItem Text="Factura" Value="2"></asp:ListItem></asp:DropDownList>
+        </td>
+      <td><asp:TextBox ID="TextBox51" runat="server"></asp:TextBox></td>
+      <td>
+        <asp:DropDownList ID="DropDownList44" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
+    <asp:ListItem Text="Cajas" Value="1"></asp:ListItem>
+    <asp:ListItem Text="Pallets" Value="2"></asp:ListItem></asp:DropDownList>
        </td>
       <td><asp:TextBox ID="TextBox41" runat="server"></asp:TextBox></td>
         
@@ -393,16 +384,16 @@
        <td><asp:DropDownList ID="DropDownList45" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource23" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores]"></asp:SqlDataSource>
         </td>
-       <td><asp:DropDownList ID="DropDownList46" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
-          <asp:SqlDataSource ID="SqlDataSource24" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCliente], [nombre] FROM [clientes]"></asp:SqlDataSource>
-        </td>
-      <td><asp:DropDownList ID="DropDownList47" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
-    <asp:ListItem Text="Si" Value="1"></asp:ListItem>
-    <asp:ListItem Text="No" Value="2"></asp:ListItem></asp:DropDownList></td>
-      <td>
-        <asp:DropDownList ID="DropDownList48" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
+       <td>
+        <asp:DropDownList ID="DropDownList53" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
     <asp:ListItem Text="Guía" Value="1"></asp:ListItem>
     <asp:ListItem Text="Factura" Value="2"></asp:ListItem></asp:DropDownList>
+        </td>
+      <td><asp:TextBox ID="TextBox52" runat="server"></asp:TextBox></td>
+      <td>
+        <asp:DropDownList ID="DropDownList48" runat="server"> <asp:ListItem Enabled="true" Text="" Value="-1"></asp:ListItem>
+    <asp:ListItem Text="Cajas" Value="1"></asp:ListItem>
+    <asp:ListItem Text="Pallets" Value="2"></asp:ListItem></asp:DropDownList>
        </td>
       <td><asp:TextBox ID="TextBox45" runat="server"></asp:TextBox></td>
         
@@ -422,7 +413,7 @@
        
         </section>
 
-    <section>
+    <section >
         <div align="center">
                 <table>
                     <tr>
