@@ -8,37 +8,39 @@
 
 
     <section class="content">
-        <div class="row">
+        <div class="row" >
             <div class="col-md-6">
                 <div class="box box-primary">
                     <div class="box-body">
 
                         <div class="form-group">
-                            <label>INGRESE TIPO DE COMPROBANTE 
-                            <br />
-                                <br />
+                            <label>INGRESE TIPO DE COMPROBANTE<br />
+
                             </label>
-                         <asp:CheckBoxList ID="CheckBoxList1" runat="server" RepeatDirection="Horizontal" Height="16px" Width="569px">
-                             <asp:ListItem Text="Rechazo" Value="Rechazo"></asp:ListItem>
-                            
-                             <asp:ListItem Text="Recepción" Value="Recepcion"></asp:ListItem>
-                             <asp:ListItem Text="Despacho" Value="Despacho"></asp:ListItem>
-                             <asp:ListItem Text="Materiales" Value="Materiales"></asp:ListItem>
-                         </asp:CheckBoxList>
+
+                           
                             <br />
-                            <asp:Button ID="Button2" runat="server" Text="Confirmar" CssClass="btn btn-primary" />
                         </div>
+                         <asp:CheckBox ID="RecepcionCheckBox" runat="server" Text =" Recepción"/> &nbsp
+                            <asp:CheckBox ID="DespachoCheckBox" runat="server" Text ="Despacho"/>&nbsp
+                            <asp:CheckBox ID="MaterialesCheckBox" runat="server" Text="Materiales"/>&nbsp
+                            <asp:CheckBox ID="RechazoCheckBox" runat="server" Text="Rechazo"/>
+                        <br />
+                        <br />
+                            <asp:Button ID="Button2" runat="server" Text="Confirmar" CssClass="btn btn-primary" Onclick="Button2_Click"/>
+
                            </div>
+
                                 </div>
                                      </div>
                                           </div>
 
        
         </section>
-
+    
      <section class="content" >
-        <div class="row">
-            <div class="col-md">
+        
+            <div class="col-md" id="RecepcionForm" runat="server">
                 <div class="box box-primary">
                     <div class="box-body">
 
@@ -174,8 +176,8 @@
 
 
      <section class="content">
-        <div class="row">
-            <div class="col-md">
+        
+            <div class="col-md" id="DespachoForm" runat="server">
                 <div class="box box-primary">
                     <div class="box-body">
 
@@ -296,8 +298,8 @@
 
     
      <section class="content">
-        <div class="row">
-            <div class="col-md">
+       
+            <div class="col-md" id="RecepcionMaterialesForm" runat="server">
                 <div class="box box-primary">
                     <div class="box-body">
 

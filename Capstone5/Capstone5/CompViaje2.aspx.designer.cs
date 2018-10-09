@@ -13,13 +13,40 @@ namespace Capstone5 {
     public partial class WebForm7 {
         
         /// <summary>
-        /// CheckBoxList1 control.
+        /// RecepcionCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
+        protected global::System.Web.UI.WebControls.CheckBox RecepcionCheckBox;
+        
+        /// <summary>
+        /// DespachoCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox DespachoCheckBox;
+        
+        /// <summary>
+        /// MaterialesCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox MaterialesCheckBox;
+        
+        /// <summary>
+        /// RechazoCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox RechazoCheckBox;
         
         /// <summary>
         /// Button2 control.
@@ -29,6 +56,15 @@ namespace Capstone5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
+        
+        /// <summary>
+        /// RecepcionForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl RecepcionForm;
         
         /// <summary>
         /// DropDownList1 control.
@@ -391,6 +427,15 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.TextBox TextBox16;
         
         /// <summary>
+        /// DespachoForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DespachoForm;
+        
+        /// <summary>
         /// DropDownList17 control.
         /// </summary>
         /// <remarks>
@@ -686,6 +731,15 @@ namespace Capstone5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox31;
+        
+        /// <summary>
+        /// RecepcionMaterialesForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl RecepcionMaterialesForm;
         
         /// <summary>
         /// DropDownList33 control.
