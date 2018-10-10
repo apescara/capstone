@@ -67,6 +67,7 @@ namespace DALayer
                 con = Connection.getInstance().DBConnection();
                 cmd = new SqlCommand("spListarEmpTransporte", con);
                 cmd.CommandType = CommandType.StoredProcedure;
+                con.Open();
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
