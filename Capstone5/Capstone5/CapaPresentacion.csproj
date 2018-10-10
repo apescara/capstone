@@ -223,6 +223,7 @@
     <Content Include="css\ionslider\ion.rangeSlider.skinNice.css" />
     <Content Include="css\jvectormap\jquery-jvectormap-1.2.2.css" />
     <Content Include="css\morris\morris.css" />
+    <Content Include="css\style.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -268,6 +269,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\empTransporte.js" />
     <Content Include="js\jquery-3.1.0.min.js" />
+    <Content Include="js\jquery-ui.js" />
     <Content Include="js\jquery-ui.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery.ui.draggable.js" />
@@ -402,6 +404,7 @@
     <Content Include="agrProveedor.aspx" />
     <Content Include="agrRecepcionista.aspx" />
     <Content Include="CompViaje2.aspx" />
+    <Content Include="Invoice.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="agrTransporte.aspx.cs">
@@ -481,6 +484,13 @@
     </Compile>
     <Compile Include="CompViaje2.aspx.designer.cs">
       <DependentUpon>CompViaje2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.aspx.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice.aspx.designer.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
