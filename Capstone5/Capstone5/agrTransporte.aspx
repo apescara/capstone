@@ -82,6 +82,8 @@
                                     <th>RUT</th>
                                     <th>Email de contacto</th>
                                     <th>Fono de contacto</th>
+                                    <th>Acciones</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody id="tbl_body_table">

@@ -7475,7 +7475,7 @@
 		 *  @type string
 		 *  @default <i>Empty string</i>
 		 */
-		"sSearch": "Buscar",
+        "sSearch": "",
 	
 		/**
 		 * Flag to indicate if the search term should be interpreted as a
