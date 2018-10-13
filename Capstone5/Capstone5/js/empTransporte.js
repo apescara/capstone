@@ -10,9 +10,9 @@ function addRowDT(data) {
             data[i].RUT,
             data[i].email,
             data[i].fono,
-            '<button value="Actualizar" title="Actualizar" class="btn btn-primary btn-edit">Actualizar</i></button>&nbsp;'
+            '<button type="button" value="Actualizar" title="Actualizar" class="btn btn-primary btn-edit" data-togle="modal" data-target="#empresaModal" >Actualizar</i></button>&nbsp;'
             +
-            '<button value="Eliminar" title="Eliminar" class="btn btn-danger btn-delete">Eliminar</button>'
+            '<button type="button"value="Eliminar" title="Eliminar" class="btn btn-danger btn-delete">Eliminar</button>'
             
         ]);
     }
@@ -37,7 +37,7 @@ function sendDataAjax() {
 //evento para actualizar datos
 $(document).on('click', '.btn-edit', function (e) {
     e.preventDefault();
-    $(this).parent().parent().children().first().text;
+    $(this).parent().parent().children().first().text; 
 });
 
 //evento para eliminar datos

@@ -77,12 +77,12 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Nombre</th>
-                                    <th>Razon Social</th>
+                                    <th>NOMBRE EMPRESA</th>
+                                    <th>RAZON SOCIAL</th>
                                     <th>RUT</th>
-                                    <th>Email de contacto</th>
-                                    <th>Fono de contacto</th>
-                                    <th>Acciones</th>
+                                    <th>EMAIL CONTACTO</th>
+                                    <th>FONO CONTACTO</th>
+                                    <th>MODIFICACIONES</th>
                                     
                                 </tr>
                             </thead>
@@ -95,4 +95,38 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="empresaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-labelledby="close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Actualizar registro</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>NOMBRE EMPRESA</label>
+                    </div>
+                    <div class="form-group">
+                        <asp:TextBox ID="txtNombreEmpresa" runat="server" Text="" CssClass="form-control" Enabled="false"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label>EMAIL CONTACTO</label>
+                    </div>
+                    <div class="form-group">
+                        <asp:TextBox ID="txtEmail" runat="server" Text="" CssClass="form-control" Enabled="true"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label>FONO CONTACTO</label>
+                    </div>
+                    <div class="form-group">
+                        <asp:TextBox ID="txtFono" runat="server" Text="" CssClass="form-control" Enabled="true"></asp:TextBox>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnActualizar">Actualizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
