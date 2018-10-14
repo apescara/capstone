@@ -227,6 +227,7 @@
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Factura.html" />
     <Content Include="img\ajax-loader.gif" />
     <Content Include="img\ajax-loader1.gif" />
     <Content Include="img\avatar.png" />
@@ -251,7 +252,9 @@
     <Content Include="img\credit\paypal.png" />
     <Content Include="img\credit\paypal2.png" />
     <Content Include="img\credit\visa.png" />
+    <Content Include="img\descarga.jpg" />
     <Content Include="img\icons.png" />
+    <Content Include="img\image009.png" />
     <Content Include="img\information-add-512.png" />
     <Content Include="img\logo-puntoazul.png" />
     <Content Include="img\marca-punto-azul.png" />
@@ -404,7 +407,6 @@
     <Content Include="agrProveedor.aspx" />
     <Content Include="agrRecepcionista.aspx" />
     <Content Include="CompViaje2.aspx" />
-    <Content Include="Invoice.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="agrTransporte.aspx.cs">
@@ -484,13 +486,6 @@
     </Compile>
     <Compile Include="CompViaje2.aspx.designer.cs">
       <DependentUpon>CompViaje2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Invoice.aspx.cs">
-      <DependentUpon>Invoice.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Invoice.aspx.designer.cs">
-      <DependentUpon>Invoice.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
