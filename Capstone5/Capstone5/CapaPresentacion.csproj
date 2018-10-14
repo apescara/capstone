@@ -407,6 +407,7 @@
     <Content Include="agrProveedor.aspx" />
     <Content Include="agrRecepcionista.aspx" />
     <Content Include="CompViaje2.aspx" />
+    <Content Include="compViaje3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="agrTransporte.aspx.cs">
@@ -486,6 +487,13 @@
     </Compile>
     <Compile Include="CompViaje2.aspx.designer.cs">
       <DependentUpon>CompViaje2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="compViaje3.aspx.cs">
+      <DependentUpon>compViaje3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="compViaje3.aspx.designer.cs">
+      <DependentUpon>compViaje3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
