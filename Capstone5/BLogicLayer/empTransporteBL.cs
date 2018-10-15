@@ -46,5 +46,17 @@ namespace BLogicLayer
                 throw ex;
             }
         }
+
+        public bool Eliminar(int id)
+        {
+            try
+            {
+                return empTransporteDA.getInstance().Eliminar(id);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

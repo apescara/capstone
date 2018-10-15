@@ -87,7 +87,7 @@
                                 </tr>
                             </thead>
                             <tbody id="tbl_body_table">
-
+                                <!-- los datos viene de archivo .js -->
                             </tbody>
                         </table>
                     </div>
@@ -96,11 +96,11 @@
         </div>
     </section>
 
-    <div class="modal fade" id="empresaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="iModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-labelledby="close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Actualizar registro</h4>
                 </div>
                 <div class="modal-body">
@@ -129,4 +129,8 @@
             </div>
         </div>
     </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+        <script src="js/empTransporte.js" type="text/javascript">
+        </script>
 </asp:Content>

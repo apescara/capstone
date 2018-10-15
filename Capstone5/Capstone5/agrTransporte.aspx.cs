@@ -36,6 +36,16 @@ namespace Capstone5
             return Lista;
         }
 
+        [WebMethod]
+        public static bool EliminarEmpresa(String id)
+        {
+            Int32 idEmpresa = Convert.ToInt32(id);
+
+            bool ok = empTransporteBL.getInstance().Eliminar(idEmpresa);
+
+            return ok;
+        }
+
         private empTransporte GetEntity()
         {
             empTransporte objEmp = new empTransporte();

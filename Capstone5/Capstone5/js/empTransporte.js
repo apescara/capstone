@@ -1,4 +1,4 @@
-﻿var tabla;
+﻿var tabla, data;
 
 function addRowDT(data) {
     tabla = $("#tbl_empresasTransporte").DataTable();
@@ -10,9 +10,9 @@ function addRowDT(data) {
             data[i].RUT,
             data[i].email,
             data[i].fono,
-            '<button type="button" value="Actualizar" title="Actualizar" class="btn btn-primary btn-edit" data-togle="modal" data-target="#empresaModal" >Actualizar</i></button>&nbsp;'
+            '<button type="button" value="Actualizar" title="Actualizar" class="btn btn-primary btn-edit" data-target="#iModal" data-toggle="modal">Actualizar</button>&nbsp;'
             +
-            '<button type="button"value="Eliminar" title="Eliminar" class="btn btn-danger btn-delete">Eliminar</button>'
+            '<button type="button" value="Eliminar" title="Eliminar" class="btn btn-danger btn-delete">Eliminar</button>'
             
         ]);
     }
@@ -34,17 +34,44 @@ function sendDataAjax() {
     });
 }
 
+function deleteDataAjax(data) {
+    var obj = JSON.stringify({ id: JSON.stringify(data) });
+
+    $.ajax({
+        type: "POST",
+        url: "agrTransporte.aspx/EliminarEmpresa",
+        data: obj,
+        dataType: "json",
+        contentType: 'application/json; charset=uft-8',
+        error: function (xhr, ajaxOptions, thrownError) {
+            console.log(xhr.status + "\n" + xhr.responseText, "\n" + thrownError);
+        },
+        success: function (response) {
+            if (response.d) {
+                alert("Empresa eliminada de forma correcta.");
+            } else {
+                alert("No se ha podido eliminar a la empresa.");
+            }
+        }
+    });
+}
+
 //evento para actualizar datos
 $(document).on('click', '.btn-edit', function (e) {
     e.preventDefault();
-    $(this).parent().parent().children().first().text; 
+    var row = $(this).parent().parent()[0];
+    data = tabla.fnGetData();
 });
 
 //evento para eliminar datos
 $(document).on('click', '.btn-delete', function (e) {
     e.preventDefault();
     var row = $(this).parent().parent()[0];
-    var data = tabla.fnGetData();
+    var dataRow = tabla.fnGetData(row);
+
+    deleteDataAjax(dataRow[0]);
+
+    sendDataAjax();
 });
 
 sendDataAjax();
