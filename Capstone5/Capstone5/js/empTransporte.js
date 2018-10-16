@@ -68,7 +68,7 @@ $(document).on('click', '.btn-delete', function (e) {
     e.preventDefault();
     var row = $(this).parent().parent()[0];
     var dataRow = tabla.fnGetData(row);
-
+    console.log("Eliminar dato " + dataRow[0]);
     deleteDataAjax(dataRow[0]);
 
     sendDataAjax();
