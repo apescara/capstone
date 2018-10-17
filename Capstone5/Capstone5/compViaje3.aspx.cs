@@ -13,5 +13,10 @@ namespace Capstone5
         {
 
         }
+
+        protected void BtnFactura_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

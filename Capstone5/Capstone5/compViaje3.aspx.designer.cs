@@ -13,13 +13,13 @@ namespace Capstone5 {
     public partial class WebForm8 {
         
         /// <summary>
-        /// BtnSiguiente control.
+        /// BtnFactura control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSiguiente;
+        protected global::System.Web.UI.WebControls.Button BtnFactura;
         
         /// <summary>
         /// BtnCancelar control.

@@ -45,7 +45,7 @@
         <div align="center">
                 <table>
                     <tr>
-                        <td> <asp:Button ID="BtnSiguiente" runat="server" CssClass=" btn btn-primary" Text="Siguiente" Width="200px" /></td>
+                        <td> <asp:Button ID="BtnFactura" runat="server" CssClass=" btn btn-primary" Text="Siguiente" Width="200px" OnClick="BtnFactura_Click"/></td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;
 
                         </td>
