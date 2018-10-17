@@ -127,6 +127,35 @@ namespace DALayer
             return ok;
         }
 
+        public bool Actualizar(empTransporte objEmpresa)
+        {
+            bool ok = false;
+            SqlConnection conexion = null;
+            SqlCommand cmd = null;
+            try
+            {
+                conexion = Connection.getInstance().DBConnection();
+                cmd = new SqlCommand("spActualizarEmpresa", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@prmIdEmpresa", objEmpresa.idEmpTransporte);
+                cmd.Parameters.AddWithValue("@prmEmailEmpresa", objEmpresa.email);
+                cmd.Parameters.AddWithValue("@prmFonoEmpresa", objEmpresa.fono);
 
+                conexion.Open();
+
+                cmd.ExecuteNonQuery();
+                ok = true;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
+            return ok;
+        }
     }
 }

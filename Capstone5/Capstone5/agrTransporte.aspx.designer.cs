@@ -76,30 +76,30 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.Button BtnCancelar;
         
         /// <summary>
-        /// txtNombreEmpresa control.
+        /// txtModalNombreEmpresa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombreEmpresa;
+        protected global::System.Web.UI.WebControls.TextBox txtModalNombreEmpresa;
         
         /// <summary>
-        /// txtEmail control.
+        /// txtModalEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtModalEmail;
         
         /// <summary>
-        /// txtFono control.
+        /// txtModalFono control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFono;
+        protected global::System.Web.UI.WebControls.TextBox txtModalFono;
     }
 }

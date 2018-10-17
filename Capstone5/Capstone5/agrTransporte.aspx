@@ -108,19 +108,19 @@
                         <label>NOMBRE EMPRESA</label>
                     </div>
                     <div class="form-group">
-                        <asp:TextBox ID="txtNombreEmpresa" runat="server" Text="" CssClass="form-control" Enabled="false"></asp:TextBox>
+                        <asp:TextBox ID="txtModalNombreEmpresa" runat="server" Text="" CssClass="form-control" Enabled="false"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <label>EMAIL CONTACTO</label>
                     </div>
                     <div class="form-group">
-                        <asp:TextBox ID="txtEmail" runat="server" Text="" CssClass="form-control" Enabled="true"></asp:TextBox>
+                        <asp:TextBox ID="txtModalEmail" runat="server" Text="" CssClass="form-control" Enabled="true"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <label>FONO CONTACTO</label>
                     </div>
                     <div class="form-group">
-                        <asp:TextBox ID="txtFono" runat="server" Text="" CssClass="form-control" Enabled="true"></asp:TextBox>
+                        <asp:TextBox ID="txtModalFono" runat="server" Text="" CssClass="form-control" Enabled="true"></asp:TextBox>
                     </div>
                 </div>
                 <div class="modal-footer">

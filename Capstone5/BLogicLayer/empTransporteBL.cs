@@ -58,5 +58,17 @@ namespace BLogicLayer
                 throw ex;
             }
         }
+
+        public bool Actualizar(empTransporte objEmpresa)
+        {
+            try
+            {
+                return empTransporteDA.getInstance().Actualizar(objEmpresa);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

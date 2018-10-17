@@ -2,6 +2,8 @@
 
 function addRowDT(data) {
     tabla = $("#tbl_empresasTransporte").DataTable();
+    
+    tabla.fnClearTable();
     for (var i = 0; i < data.length; i++) {
         tabla.fnAddData([
             data[i].idEmpTransporte,
@@ -34,8 +36,32 @@ function sendDataAjax() {
     });
 }
 
+function updateDataAjax() {
+
+    var obj = JSON.stringify({ idEmpTransporte: JSON.stringify(data[0]), email: $("#txtModalEmail").val(), fono: $("txtModalFono".val() });
+
+    $.ajax({
+        type: "POST",
+        url: "agrTransporte.aspx/actualizarDatosEmpresa",
+        data: obj,
+        dataType: "json",
+        contentType: 'application/json; charset=utf-8',
+        error: function (xhr, ajaxOptions, thrownError) {
+            console.log(xhr.status + "\n" + xhr.responseText, "\n" + thrownError);
+        },
+        success: function (response) {
+            if (response.d) {
+                alert("Empresa actualizada de foma correcta");
+            } else {
+                alert("No se pudo modificar los datos de la empresa");
+            }
+        }
+    });
+}
+
 function deleteDataAjax(data) {
     var obj = JSON.stringify({ id: JSON.stringify(data) });
+    console.log("entro  la funcion");
 
     $.ajax({
         type: "POST",
@@ -48,19 +74,34 @@ function deleteDataAjax(data) {
         },
         success: function (response) {
             if (response.d) {
+                console.log("ejecuto el ajax");
                 alert("Empresa eliminada de forma correcta.");
             } else {
+                console.log("no se ejecuto el ajax");
                 alert("No se ha podido eliminar a la empresa.");
             }
         }
     });
 }
 
+function fillModalData() {
+    $("#txtModalNombreEmpresa").val(data[1]);
+    $("txtModalEmail").val(data[4]);
+    $("txtModalFono").val(data[5]);
+}
+
 //evento para actualizar datos
 $(document).on('click', '.btn-edit', function (e) {
     e.preventDefault();
     var row = $(this).parent().parent()[0];
-    data = tabla.fnGetData();
+    data = tabla.fnGetData(row);
+    fillModalData();
+});
+
+//enviar datos a server
+$("btnActualizar").click(function (e) {
+    e.preventDefault();
+    updateDataAjax();
 });
 
 //evento para eliminar datos
@@ -70,7 +111,6 @@ $(document).on('click', '.btn-delete', function (e) {
     var dataRow = tabla.fnGetData(row);
     console.log("Eliminar dato " + dataRow[0]);
     deleteDataAjax(dataRow[0]);
-
     sendDataAjax();
 });
 
