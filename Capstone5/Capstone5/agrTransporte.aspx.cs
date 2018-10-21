@@ -20,6 +20,7 @@ namespace Capstone5
 
             }
         }
+
         [WebMethod] 
         public static List<empTransporte> ListarEmpresas()
         {
@@ -34,6 +35,20 @@ namespace Capstone5
                 throw ex;
             }
             return Lista;
+        }
+
+        [WebMethod]
+        public static bool actualizarDatosEmpresa(string objId, string objEmail, string objFono)
+        {
+            empTransporte objEmpresa = new empTransporte()
+            {
+                idEmpTransporte = Convert.ToInt32(objId),
+                email = objEmail,
+                fono = Convert.ToInt32(objFono)
+            };
+
+            bool ok = empTransporteBL.getInstance().Actualizar(objEmpresa);
+            return ok;
         }
 
         [WebMethod]

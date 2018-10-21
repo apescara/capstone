@@ -38,7 +38,7 @@ function sendDataAjax() {
 
 function updateDataAjax() {
 
-    var obj = JSON.stringify({ idEmpTransporte: JSON.stringify(data[0]), email: $("#txtModalEmail").val(), fono: $("txtModalFono".val() });
+    var obj = JSON.stringify({ idEmpTransporte: JSON.stringify(data[0]), email: $("#txtModalEmail").val(), fono: $("txtModalFono").val() });
 
     $.ajax({
         type: "POST",
@@ -86,8 +86,8 @@ function deleteDataAjax(data) {
 
 function fillModalData() {
     $("#txtModalNombreEmpresa").val(data[1]);
-    $("txtModalEmail").val(data[4]);
-    $("txtModalFono").val(data[5]);
+    $("#txtModalEmail").val(data[4]);
+    $("#txtModalFono").val(data[5]);
 }
 
 //evento para actualizar datos
@@ -99,7 +99,7 @@ $(document).on('click', '.btn-edit', function (e) {
 });
 
 //enviar datos a server
-$("btnActualizar").click(function (e) {
+$("#btnActualizarRegistro").click(function (e) {
     e.preventDefault();
     updateDataAjax();
 });
