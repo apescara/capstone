@@ -227,20 +227,21 @@
 
     
     
-</body>
+
 
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
  
     <script src="js/AdminLTE/app.js" type="text/javascript"></script>
     <script src="jAlert/jquery.alerts.js" type="text/javascript"></script>
     <script src="js/jquery.ui.draggable.js" type="text/javascript"></script>
-    <script src="js/empTransporte.js" type="text/javascript"></script>
 
     <script src="js/plugins/datatables/jquery.dataTables.js"></script>
     <script src="js/plugins/datatables/dataTables.bootstrap.js"></script>
-
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+        <!-- adicion de js por pagina-->
+    </asp:ContentPlaceHolder>
 
 
    
-
+</body>
 </html>

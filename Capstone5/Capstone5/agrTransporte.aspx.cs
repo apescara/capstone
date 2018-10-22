@@ -20,6 +20,7 @@ namespace Capstone5
 
             }
         }
+
         [WebMethod] 
         public static List<empTransporte> ListarEmpresas()
         {
@@ -34,6 +35,30 @@ namespace Capstone5
                 throw ex;
             }
             return Lista;
+        }
+
+        [WebMethod]
+        public static bool ActualizarDatosEmpresa(String objId, String objEmail, String objFono)
+        {
+            empTransporte objEmpresa = new empTransporte()
+            {
+                idEmpTransporte = Convert.ToInt32(objId),
+                email = objEmail,
+                fono = Convert.ToInt32(objFono)
+            };
+
+            bool ok = empTransporteBL.getInstance().Actualizar(objEmpresa);
+            return ok;
+        }
+
+        [WebMethod]
+        public static bool EliminarEmpresa(String id)
+        {
+            Int32 idEmpresa = Convert.ToInt32(id);
+
+            bool ok = empTransporteBL.getInstance().Eliminar(idEmpresa);
+
+            return ok;
         }
 
         private empTransporte GetEntity()
