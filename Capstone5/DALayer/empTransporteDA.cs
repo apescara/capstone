@@ -96,6 +96,66 @@ namespace DALayer
             return Lista;
         }
 
+        public bool Eliminar(int id)
+        {
+            SqlConnection conexion = null;
+            SqlCommand cmd = null;
+            bool ok = false;
+            try
+            {
+                conexion = Connection.getInstance().DBConnection();
+                cmd = new SqlCommand("spEliminarEmpresa", conexion);
+                cmd.Parameters.AddWithValue("@prmIdEmpresa", id);
+                cmd.CommandType = CommandType.StoredProcedure;
 
+                conexion.Open();
+
+                cmd.ExecuteNonQuery();
+
+                ok = true;
+            }
+            catch (Exception ex)
+            {
+                ok = false;
+                throw ex;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
+            return ok;
+        }
+
+        public bool Actualizar(empTransporte objEmpresa)
+        {
+            bool ok = false;
+            SqlConnection conexion = null;
+            SqlCommand cmd = null;
+            try
+            {
+                conexion = Connection.getInstance().DBConnection();
+                cmd = new SqlCommand("spActualizarEmpresa", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@prmIdEmpresa", objEmpresa.idEmpTransporte);
+                cmd.Parameters.AddWithValue("@prmEmailEmpresa", objEmpresa.email);
+                cmd.Parameters.AddWithValue("@prmFonoEmpresa", objEmpresa.fono);
+
+                conexion.Open();
+
+                cmd.ExecuteNonQuery();
+                ok = true;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
+            return ok;
+        }
     }
 }
