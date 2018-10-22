@@ -45,7 +45,7 @@
                     <div class="box-body">
 
                         <div class="form-group">
-                            <label>INGRESE INFORMACIÓN DE LA RECEPCIÓN
+                            <label>INGRESE INFORMACIÓN DEL DESPACHO
                             <br />
                                 <br />
                             </label>
@@ -182,7 +182,7 @@
                     <div class="box-body">
 
                         <div class="form-group">
-                            <label>INGRESE INFORMACIÓN DEL DESPACHO
+                            <label>INGRESE INFORMACIÓN DE LA RECEPCIÓN
                             <br />
                                 <br />
                             </label>
@@ -191,7 +191,6 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Cliente</th>
       <th scope="col">Proveedor</th>
       <th scope="col">Tipo de Documento</th>
       <th scope="col">Folio de Documento</th>
@@ -222,7 +221,7 @@
       <td><asp:TextBox ID="TextBox17" runat="server"></asp:TextBox></td>
         
       <td><asp:TextBox ID="TextBox18" runat="server" TextMode="Number"></asp:TextBox></td>
-     <td><asp:TextBox ID="TextBox19" runat="server" TextMode="Number"></asp:TextBox></td>
+  
   
     </tr>
     <tr>
@@ -241,7 +240,7 @@
         
       <td><asp:TextBox ID="TextBox22" runat="server" TextMode="Number"></asp:TextBox></td>
      <td><asp:TextBox ID="TextBox23" runat="server" TextMode="Number"></asp:TextBox></td>
-     <td><asp:TextBox ID="TextBox24" runat="server" TextMode="Number"></asp:TextBox></td>
+    
     <tr>
       <th scope="row">3</th>
        <td><asp:DropDownList ID="DropDownList25" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
@@ -258,7 +257,7 @@
       <td><asp:TextBox ID="TextBox25" runat="server"></asp:TextBox></td>
         
       <td><asp:TextBox ID="TextBox26" runat="server" TextMode="Number"></asp:TextBox></td>
-     <td><asp:TextBox ID="TextBox27" runat="server" TextMode="Number"></asp:TextBox></td>
+ 
 
 
     </tr>
@@ -278,7 +277,7 @@
       <td><asp:TextBox ID="TextBox29" runat="server"></asp:TextBox></td>
         
       <td><asp:TextBox ID="TextBox30" runat="server" TextMode="Number"></asp:TextBox></td>
-     <td><asp:TextBox ID="TextBox31" runat="server" TextMode="Number"></asp:TextBox></td>
+
     </tr>
   </tbody>
 </table>
