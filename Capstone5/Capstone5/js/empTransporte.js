@@ -12,8 +12,10 @@ function addRowDT(data) {
             data[i].RUT,
             data[i].email,
             data[i].fono,
-            '<button type="button" value="Actualizar" title="Actualizar" class="btn btn-primary btn-edit" data-target="#iModal" data-toggle="modal">Actualizar</button>&nbsp;'
+            /*
+             * '<button type="button" value="Actualizar" title="Actualizar" class="btn btn-primary btn-edit" data-target="#iModal" data-toggle="modal">Actualizar</button>&nbsp;'
             +
+            */
             '<button type="button" value="Eliminar" title="Eliminar" class="btn btn-danger btn-delete">Eliminar</button>'
             
         ]);
@@ -60,11 +62,11 @@ function updateDataAjax() {
         }
     });
 }
-*/
+
 
 function updateDataAjax() {
     console.log('---->', $("#ContentPlaceHolder1_txtModalEmail").val());
-    var obj = { idEmpTransporte: data[0], email: $("#ContentPlaceHolder1_txtModalEmail").val(), fono: $("#ContentPlaceHolder1_txtModalFono").val() };
+    var obj = JSON.stringify({ idEmpTransporte: JSON.stringify(data[0]), email: $("#ContentPlaceHolder1_txtModalEmail").val(), fono: $("#ContentPlaceHolder1_txtModalFono").val() });
     console.log(obj);
     $.ajax({
         type: "POST",
@@ -84,6 +86,7 @@ function updateDataAjax() {
         }
     });
 }
+*/
 
 function deleteDataAjax(data) {
     var obj = JSON.stringify({ id: JSON.stringify(data) });
@@ -110,11 +113,13 @@ function deleteDataAjax(data) {
     });
 }
 
+/*
 function fillModalData() {
-    $("#txtModalNombreEmpresa").val(data[1]);
-    $("#txtModalEmail").val(data[4]);
-    $("#txtModalFono").val(data[5]);
+    $("#ContentPlaceHolder1_txtModalNombreEmpresa").val(data[1]);
+    $("#ContentPlaceHolder1_txtModalEmail").val(data[4]);
+    $("#ContentPlaceHolder1_txtModalFono").val(data[5]);
 }
+*/
 
 //evento para actualizar datos
 $(document).on('click', '.btn-edit', function (e) {
@@ -124,11 +129,13 @@ $(document).on('click', '.btn-edit', function (e) {
     fillModalData();
 });
 
+/*
 //enviar datos a server
 $("#btnActualizarRegistro").click(function (e) {
     e.preventDefault();
     updateDataAjax();
 });
+*/
 
 //evento para eliminar datos
 $(document).on('click', '.btn-delete', function (e) {

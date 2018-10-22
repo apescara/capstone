@@ -38,11 +38,11 @@ namespace Capstone5
         }
 
         [WebMethod]
-        public static bool ActualizarDatosEmpresa(int objId, string objEmail, string objFono)
+        public static bool ActualizarDatosEmpresa(String objId, String objEmail, String objFono)
         {
             empTransporte objEmpresa = new empTransporte()
             {
-                idEmpTransporte = objId,
+                idEmpTransporte = Convert.ToInt32(objId),
                 email = objEmail,
                 fono = Convert.ToInt32(objFono)
             };
