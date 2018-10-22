@@ -23,12 +23,12 @@ namespace Capstone5
 
             if (RecepcionCheckBox.Checked)
             {
-                RecepcionForm.Visible = true;
+                DespachoForm.Visible = true;
             }
 
             if (DespachoCheckBox.Checked)
             {
-                DespachoForm.Visible = true;
+                RecepcionForm.Visible = true;
 
             }
 

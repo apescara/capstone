@@ -508,15 +508,6 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.TextBox TextBox18;
         
         /// <summary>
-        /// TextBox19 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox19;
-        
-        /// <summary>
         /// DropDownList21 control.
         /// </summary>
         /// <remarks>
@@ -578,15 +569,6 @@ namespace Capstone5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox23;
-        
-        /// <summary>
-        /// TextBox24 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox24;
         
         /// <summary>
         /// DropDownList25 control.
@@ -652,15 +634,6 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.TextBox TextBox26;
         
         /// <summary>
-        /// TextBox27 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox27;
-        
-        /// <summary>
         /// DropDownList29 control.
         /// </summary>
         /// <remarks>
@@ -722,15 +695,6 @@ namespace Capstone5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox30;
-        
-        /// <summary>
-        /// TextBox31 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox31;
         
         /// <summary>
         /// RecepcionMaterialesForm control.
