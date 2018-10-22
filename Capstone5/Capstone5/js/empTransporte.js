@@ -35,14 +35,40 @@ function sendDataAjax() {
         }
     });
 }
-
+/*
 function updateDataAjax() {
 
-    var obj = JSON.stringify({ idEmpTransporte: JSON.stringify(data[0]), email: $("#txtModalEmail").val(), fono: $("txtModalFono").val() });
-
+    var obj = JSON.stringify({ idEmpTransporte: JSON.stringify(data[0]), email: $("#txtModalEmail").val(), fono: $("#txtModalFono").val() });
+    console.log("inicio");
+    console.log(obj);
+    console.log("fin");
     $.ajax({
         type: "POST",
-        url: "agrTransporte.aspx/actualizarDatosEmpresa",
+        url: "agrTransporte.aspx/ActualizarDatosEmpresa",
+        data: obj,
+        dataType: "json",
+        contentType: 'application/json; charset=utf-8',
+        error: function (xhr, ajaxOptions, thrownError) {
+            console.log(xhr.status + "\n" + xhr.responseText, "\n" + thrownError);
+        },
+        success: function (response) {
+            if (response.d) {
+                alert("Empresa actualizada de foma correcta");
+            } else {
+                alert("No se pudo modificar los datos de la empresa");
+            }
+        }
+    });
+}
+*/
+
+function updateDataAjax() {
+    console.log('---->', $("#ContentPlaceHolder1_txtModalEmail").val());
+    var obj = { idEmpTransporte: data[0], email: $("#ContentPlaceHolder1_txtModalEmail").val(), fono: $("#ContentPlaceHolder1_txtModalFono").val() };
+    console.log(obj);
+    $.ajax({
+        type: "POST",
+        url: "agrTransporte.aspx/ActualizarDatosEmpresa",
         data: obj,
         dataType: "json",
         contentType: 'application/json; charset=utf-8',
