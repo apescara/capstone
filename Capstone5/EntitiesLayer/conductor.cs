@@ -12,6 +12,7 @@ namespace EntitiesLayer
         public string nombre { get; set; }
         public string apellido { get; set; }
         public int idEmpTransporte { get; set; }
+        public string nombreEmpTransporte { get; set; }
         public string RUT { get; set; }
         public string email { get; set; }
         public int fono { get; set; }

@@ -127,6 +127,7 @@ namespace DALayer
             return ok;
         }
 
+        //esta todavia no esta funcionando bien
         public bool Actualizar(empTransporte objEmpresa)
         {
             bool ok = false;

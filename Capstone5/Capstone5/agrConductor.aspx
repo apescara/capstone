@@ -18,10 +18,17 @@
                             <asp:SqlDataSource ID="EmpTransporteConduc" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idEmpTransporte], [nombre] FROM [empresasTransporte]"></asp:SqlDataSource>
                         </div>
                         <div class="form-group">
-                            <label>NOMBRE COMPLETO</label>
+                            <label>NOMBRE</label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox1" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="nombre" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                        </div>
+
+                       <div class="form-group">
+                            <label>APELLIDOS</label>
+                        </div>
+                        <div class="form-group">
+                          <asp:TextBox ID="apellidos" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
 
 
@@ -29,14 +36,21 @@
                             <label>RUT</label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox4" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="RUT" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
 
                          <div class="form-group">
                             <label>EMAIL DE CONTACTO</label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox2" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="email" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                        </div>
+
+                        <div class="form-group">
+                            <label>FONO DE CONTACTO</label>
+                        </div>
+                        <div class="form-group">
+                          <asp:TextBox ID="fono" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
 
                     </div>
