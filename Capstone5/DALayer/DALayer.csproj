@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="conductorDA.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="empTransporteDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
