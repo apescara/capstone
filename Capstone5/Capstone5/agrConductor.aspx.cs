@@ -54,12 +54,26 @@ namespace Capstone5
             objCond.idConductor = 0;
             objCond.nombre = nombre.Text;
             objCond.apellido = apellidos.Text;
-            objCond.idEmpTransporte = EmpTransporteConduc;
+            objCond.idEmpTransporte = Convert.ToInt32(EmpTransporteConduc);
             objCond.RUT = RUT.Text;
             objCond.email = email.Text;
             objCond.idConductor = Convert.ToInt32(fono.Text);
 
             return objCond;
+        }
+
+        protected void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            conductor objCond = GetEntity();
+            bool response = conductorBL.getInstance().RegistrarConductor(objCond);
+            if(response == true)
+            {
+                Response.Write("<script>alert('REGISTRO CORRECTO')</script>");
+            }
+            else
+            {
+                Response.Write("<script>alert('REGISTRO INCORRECTO')</script>");
+            }
         }
     }
 }
