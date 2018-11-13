@@ -103,8 +103,9 @@ namespace DALayer
             try
             {
                 con = Connection.getInstance().DBConnection();
-                cmd = new SqlCommand("spliminarConductor", con);
+                cmd = new SqlCommand("spEliminarConductor", con);
                 cmd.Parameters.AddWithValue("@prmIdConductor", id);
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 con.Open();
 

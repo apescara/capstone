@@ -15,7 +15,8 @@
                         </div>
                         <div class="form-group">
                           <asp:DropDownList ID="ET" runat="server" CssClass="form-control" DataSourceID="EmpTransporteConduc" DataTextField="nombre" DataValueField="idEmpTransporte"></asp:DropDownList>
-                            <asp:SqlDataSource ID="EmpTransporteConduc" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idEmpTransporte], [nombre] FROM [empresasTransporte]"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="EmpTransporteConduc" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idEmpTransporte], [nombre] FROM [empresasTransporte]">
+                            </asp:SqlDataSource>
                         </div>
                         <div class="form-group">
                             <label>NOMBRE</label>

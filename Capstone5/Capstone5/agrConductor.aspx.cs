@@ -8,8 +8,11 @@ using BLogicLayer;
 using EntitiesLayer;
 using System.Web.Script.Serialization;
 using System.Web.Services;
+using System.Data;
 
 namespace Capstone5
+
+
 {
     public partial class WebForm4 : System.Web.UI.Page
     {
@@ -17,7 +20,7 @@ namespace Capstone5
         {
             if (!Page.IsPostBack)
             {
-
+                
             }
 
         }
@@ -54,10 +57,10 @@ namespace Capstone5
             objCond.idConductor = 0;
             objCond.nombre = nombre.Text;
             objCond.apellido = apellidos.Text;
-            objCond.idEmpTransporte = Convert.ToInt32(EmpTransporteConduc);
+            objCond.idEmpTransporte = Convert.ToInt32(ET.SelectedValue);
             objCond.RUT = RUT.Text;
             objCond.email = email.Text;
-            objCond.idConductor = Convert.ToInt32(fono.Text);
+            objCond.fono = Convert.ToInt32(fono.Text);
 
             return objCond;
         }
