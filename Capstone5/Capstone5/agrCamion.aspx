@@ -90,6 +90,7 @@
                                     <th>PROCEDENCIA</th>
                                     <th>TIPO</th>
                                     <th>CAPACIDAD</th>
+                                    <th>MODIFICAR</th>
                                     
                                 </tr>
                             </thead>

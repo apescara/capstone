@@ -38,10 +38,14 @@ namespace DALayer
                 cmd.Parameters.Add("@prmInternoExterno", objCamion.internoExterno);
                 cmd.Parameters.Add("@prmCamionRampla", objCamion.camionRampla);
                 cmd.Parameters.Add("@prmCapacidad", objCamion.capacidad);
-                cmd.Parameters.Add("@prmIdEmpTrasnporte", objCamion.idEmpTransporte);
+                cmd.Parameters.Add("@prmIdEmpTransporte", objCamion.idEmpTransporte);
                 con.Open();
                 int filas = cmd.ExecuteNonQuery();
-                if (filas > 0) response = true;
+                if (filas > 0)
+                {
+                    response = true;
+                }
+
             }
             catch (Exception ex)
             {
@@ -64,7 +68,7 @@ namespace DALayer
             try
             {
                 con = Connection.getInstance().DBConnection();
-                cmd = new SqlCommand("spListarCamion", con);
+                cmd = new SqlCommand("spListarCamiones", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 con.Open();
                 dr = cmd.ExecuteReader();
@@ -75,8 +79,9 @@ namespace DALayer
                     objCamion.patente = dr["patente"].ToString();
                     objCamion.internoExterno = dr["internoExterno"].ToString();
                     objCamion.camionRampla = dr["camionRampla"].ToString();
-                    objCamion.empTransporte = dr["empTransporte"].ToString();
                     objCamion.capacidad = Convert.ToInt32(dr["capacidad"]);
+                    objCamion.empTransporte = dr["empTransporte"].ToString();
+                    objCamion.idEmpTransporte = Convert.ToInt32(dr["idEmpTransporte"]);
 
                     Lista.Add(objCamion);
                 }
