@@ -21,14 +21,14 @@
                             <label>PATENTE </label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox1" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="patente" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
 
                         <div class="form-group">
                             <label>PROCEDENCIA </label>
                         </div>
                         <div class="form-group">
-                         <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
+                         <asp:DropDownList ID="procedencia" runat="server" CssClass="form-control">
                              <asp:ListItem Value="1">INTERNO</asp:ListItem>
                              <asp:ListItem Value="0">EXTERNO</asp:ListItem>
                             </asp:DropDownList>
@@ -38,7 +38,7 @@
                             <label>TIPO DE CAMION </label>
                         </div>
                         <div class="form-group">
-                          <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control">
+                          <asp:DropDownList ID="tipoCamion" runat="server" CssClass="form-control">
                               <asp:ListItem Value="1">CAMIÓN</asp:ListItem>
                               <asp:ListItem Value="0">RAMPLA</asp:ListItem>
                             </asp:DropDownList>
@@ -48,7 +48,7 @@
                             <label>CAPACIDAD DEL CAMIÓN</label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="TextBox4" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="capacidad" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
 
                     </div>
@@ -62,7 +62,7 @@
             <div align="center">
                 <table>
                     <tr>
-                        <td> <asp:Button ID="BtnAgregar" runat="server" CssClass=" btn btn-primary" Text="Agregar" Width="200px"/></td>
+                        <td> <asp:Button ID="BtnAgregar" runat="server" CssClass=" btn btn-primary" Text="Agregar" Width="200px" OnClick="BtnAgregar_Click"/></td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;
 
                         </td>
@@ -72,4 +72,39 @@
         </div>
             
     </section>
+
+     <section class="content">
+        <div class ="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Lista de Conductores</h3>
+                    </div>
+                    <div class="box-body table-responsive">
+                        <table id="tbl_camiones" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>PATENTE</th>
+                                    <th>EMPRESA TRANSPORTE</th>
+                                    <th>PROCEDENCIA</th>
+                                    <th>TIPO</th>
+                                    <th>CAPACIDAD</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody id="tbl_body_table">
+                                <!-- los datos viene de archivo .js -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+        <script src="js/camion.js" type="text/javascript">
+        </script>
 </asp:Content>

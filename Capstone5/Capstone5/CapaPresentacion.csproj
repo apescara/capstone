@@ -270,6 +270,7 @@
     <Content Include="js\AdminLTE\demo.js" />
     <Content Include="js\bootstrap-datepicker.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\camion.js" />
     <Content Include="js\conductor.js" />
     <Content Include="js\empTransporte.js" />
     <Content Include="js\jquery-3.1.0.min.js" />
