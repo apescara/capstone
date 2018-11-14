@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="camionDA.cs" />
+    <Compile Include="clienteDA.cs" />
     <Compile Include="conductorDA.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="empTransporteDA.cs" />
