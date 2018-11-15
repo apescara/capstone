@@ -107,3 +107,7 @@
         </div>
     </section>
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+        <script src="js/cliente.js" type="text/javascript">
+        </script>
+</asp:Content>
