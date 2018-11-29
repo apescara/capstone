@@ -49,7 +49,7 @@ namespace Capstone5
         {
             cliente objCli = new cliente();
             objCli.idCliente = 0;
-            objCli.nombre = nombre.Text;
+            objCli.nombre = nombreCliente.Text;
             objCli.razonSocial = razonSocial.Text;
             objCli.RUT = RUT.Text;
             objCli.EMAIL = email.Text;

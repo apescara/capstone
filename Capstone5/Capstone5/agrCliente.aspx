@@ -14,7 +14,7 @@
                             <label>NOMBRE DEL CLIENTE </label>
                         </div>
                         <div class="form-group">
-                          <asp:TextBox ID="nombre" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                          <asp:TextBox ID="nombreCliente" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label>RAZÓN SOCIAL </label>
@@ -48,7 +48,7 @@
                             <label>CIUDAD</label>
                         </div>
                         <div class="form-group">
-                          <asp:DropDownList ID="ET" runat="server" CssClass="form-control" DataSourceID="BaseDatosPtoAzul" DataTextField="nombre" DataValueField="idLugar"></asp:DropDownList>
+                          <asp:DropDownList ID="ET" runat="server" CssClass="form-control" DataSourceID="BaseDatosPtoAzul" DataTextField="lugar" DataValueField="idLugar"></asp:DropDownList>
                             <asp:SqlDataSource ID="BaseDatosPtoAzul" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idLugar], [lugar] FROM [lugaresTransporte]"></asp:SqlDataSource>
                         </div>
 
