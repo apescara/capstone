@@ -22,13 +22,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
         
         /// <summary>
-        /// DropDownList6 control.
+        /// recepcionista control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList6;
+        protected global::System.Web.UI.WebControls.DropDownList recepcionista;
         
         /// <summary>
         /// SqlDataSource1 control.
@@ -40,13 +40,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// empresaTransporte control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList empresaTransporte;
         
         /// <summary>
         /// SqlDataSource2 control.
@@ -58,13 +58,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
         
         /// <summary>
-        /// DropDownList3 control.
+        /// conductor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.DropDownList conductor;
         
         /// <summary>
         /// SqlDataSource3 control.
@@ -76,13 +76,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource3;
         
         /// <summary>
-        /// DropDownList5 control.
+        /// patente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
+        protected global::System.Web.UI.WebControls.DropDownList patente;
         
         /// <summary>
         /// SqlDataSource4 control.
@@ -94,13 +94,13 @@ namespace Capstone5 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource4;
         
         /// <summary>
-        /// DropDownList4 control.
+        /// temperatura control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList4;
+        protected global::System.Web.UI.WebControls.DropDownList temperatura;
         
         /// <summary>
         /// BtnSiguiente control.

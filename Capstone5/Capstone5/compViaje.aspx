@@ -23,7 +23,7 @@
                             <label>RECEPCIONISTA</label>
                         </div>
                         <div class="form-group">
-                         <asp:DropDownList ID="DropDownList6" runat="server" CssClass="form-control" DataSourceID="SqlDataSource1" DataTextField="idUsuario" DataValueField="idRecepcionista"></asp:DropDownList>
+                         <asp:DropDownList ID="recepcionista" runat="server" CssClass="form-control" DataSourceID="SqlDataSource1" DataTextField="idUsuario" DataValueField="idRecepcionista"></asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idRecepcionista], [idUsuario] FROM [recepcionistas]"></asp:SqlDataSource>
                         </div>
 
@@ -37,9 +37,9 @@
                        
                         <div class="input-group">
                             
-                            <input type="text" id="calendario2" value=""><img class="ui-datepicker-trigger" src="img/calendar.gif" alt="..." title="..."/>
+                            <input type="text" id="fechaDocumento" value=""><img class="ui-datepicker-trigger" src="img/calendar.gif" alt="..." title="..."/>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp
-                            <input type="text" id="calendario" value=""><img class="ui-datepicker-trigger" src="img/calendar.gif" alt="..." title="..."/>
+                            <input type="text" id="fechaComprobante" value=""><img class="ui-datepicker-trigger" src="img/calendar.gif" alt="..." title="..."/>
                      
                         </div>
                                 
@@ -56,7 +56,7 @@
                             <label>EMPRESA DE TRANSPORTE</label>
                         </div>
                         <div class="form-group">
-                         <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idEmpTransporte"></asp:DropDownList>
+                         <asp:DropDownList ID="empresaTransporte" runat="server" CssClass="form-control" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idEmpTransporte"></asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idEmpTransporte], [nombre] FROM [empresasTransporte]"></asp:SqlDataSource>
                         </div>
 
@@ -72,14 +72,14 @@
                         </div>
                         <div class="form-group">
                               
-                          <asp:DropDownList ID="DropDownList3" runat="server" CssClass="form-control" DataSourceID="SqlDataSource3" DataTextField="nombre" DataValueField="idConductor"></asp:DropDownList>
+                          <asp:DropDownList ID="conductor" runat="server" CssClass="form-control" DataSourceID="SqlDataSource3" DataTextField="nombre" DataValueField="idConductor"></asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idConductor], [nombre] FROM [conductores]"></asp:SqlDataSource>
                         </div>
                         <div class="form-group">
                             <label>PATENTE </label>
                         </div>
                         <div class="form-group">
-                             <asp:DropDownList ID="DropDownList5" runat="server" CssClass="form-control" DataSourceID="SqlDataSource4" DataTextField="Patente" DataValueField="idCamion"></asp:DropDownList>
+                             <asp:DropDownList ID="patente" runat="server" CssClass="form-control" DataSourceID="SqlDataSource4" DataTextField="Patente" DataValueField="idCamion"></asp:DropDownList>
                              <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCamion], [Patente] FROM [camiones]"></asp:SqlDataSource>
                         </div>
 
@@ -87,7 +87,7 @@
                             <label>TEMPERATURA</label>
                         </div>
                         <div class="form-group">
-                         <asp:DropDownList ID="DropDownList4" runat="server" CssClass="form-control">
+                         <asp:DropDownList ID="temperatura" runat="server" CssClass="form-control">
                             <asp:ListItem Enabled="false" Text="T° en grados Celsius" Value=""></asp:ListItem>
                             <asp:ListItem Text="0°" Value="0"></asp:ListItem>
                             <asp:ListItem Text="1°" Value="1"></asp:ListItem>

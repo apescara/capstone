@@ -24,16 +24,22 @@ namespace DALayer
         }
         #endregion
 
-        public bool RegistrarComprobante(comun ObjComp)
+        public int RegistrarComprobante(comun ObjComp)
         {
             SqlConnection con = null;
             SqlCommand cmd = null;
-            bool response = false;
+            //bool response = false;
+            //int filas;
+            int numeroFolio = -1; 
             try
             {
                 con = Connection.getInstance().DBConnection();
                 cmd = new SqlCommand("spRegistrarComprobante", con);
                 cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter outPut = new SqlParameter("@prmNumeroFolio", SqlDbType.Int);
+
+                cmd.Parameters.Add(outPut);
                 cmd.Parameters.Add("@prmIdrecepcionista", ObjComp.idRecepcionista);
                 cmd.Parameters.Add("@prmFechaDocumento", ObjComp.fechaDocumento);
                 cmd.Parameters.Add("@prmFechaComprobante", ObjComp.fechaComprobante);
@@ -43,19 +49,22 @@ namespace DALayer
                 cmd.Parameters.Add("@prmTemperatura", ObjComp.temperatura);
                 cmd.Parameters.Add("@prmRechazo", ObjComp.rechazo);
                 con.Open();
-                int filas = cmd.ExecuteNonQuery();
-                if (filas > 0) response = true;
+
+                cmd.ExecuteNonQuery();
+                //filas = cmd.ExecuteNonQuery();
+                //if (filas > 0) response = true;
+                if (outPut.Value != DBNull.Value) numeroFolio = Convert.ToInt32(outPut.Value);
             }
             catch (Exception ex)
             {
-                response = false;
+                //response = false;
                 throw ex;
             }
             finally
             {
                 con.Close();
             }
-            return response;
+            return numeroFolio;
         }
 
         public List<comun> ListarComprobantes()

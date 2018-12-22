@@ -24,7 +24,7 @@ namespace BLogicLayer
         #endregion
 
 
-        public bool RegistrarComprobante(conductor objComp)
+        public int RegistrarComprobante(comun objComp)
         {
             try
             {
