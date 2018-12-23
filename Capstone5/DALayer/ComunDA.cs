@@ -41,7 +41,7 @@ namespace DALayer
 
                 cmd.Parameters.Add(outPut);
                 cmd.Parameters.Add("@prmIdrecepcionista", ObjComp.idRecepcionista);
-                cmd.Parameters.Add("@prmFechaDocumento", ObjComp.fechaDocumento);
+                cmd.Parameters.Add("@prmFechaDocumento", ObjComp.fechaDocumento); 
                 cmd.Parameters.Add("@prmFechaComprobante", ObjComp.fechaComprobante);
                 cmd.Parameters.Add("@prmIdEmpTransporte", ObjComp.idEmpTransporte);
                 cmd.Parameters.Add("@prmIdRampla", ObjComp.idRampla);
@@ -57,6 +57,7 @@ namespace DALayer
             }
             catch (Exception ex)
             {
+                numeroFolio = -1;
                 //response = false;
                 throw ex;
             }
