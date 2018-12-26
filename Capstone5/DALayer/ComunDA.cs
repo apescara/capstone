@@ -39,6 +39,7 @@ namespace DALayer
 
                 SqlParameter outPut = new SqlParameter("@prmNumeroFolio", SqlDbType.Int);
 
+                outPut.Direction = ParameterDirection.Output;
                 cmd.Parameters.Add(outPut);
                 cmd.Parameters.Add("@prmIdrecepcionista", ObjComp.idRecepcionista);
                 cmd.Parameters.Add("@prmFechaDocumento", ObjComp.fechaDocumento); 
