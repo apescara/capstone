@@ -45,8 +45,11 @@
     <Compile Include="camion.cs" />
     <Compile Include="comun.cs" />
     <Compile Include="conductor.cs" />
+    <Compile Include="despacho.cs" />
     <Compile Include="empTransporte.cs" />
+    <Compile Include="envioMaterial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recepcion.cs" />
     <Compile Include="recepcionista.cs" />
     <Compile Include="usuario.cs" />
   </ItemGroup>
