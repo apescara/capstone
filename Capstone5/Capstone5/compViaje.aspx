@@ -23,8 +23,8 @@
                             <label>RECEPCIONISTA</label>
                         </div>
                         <div class="form-group">
-                         <asp:DropDownList ID="recepcionista" runat="server" CssClass="form-control" DataSourceID="SqlDataSource1" DataTextField="idUsuario" DataValueField="idRecepcionista"></asp:DropDownList>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idRecepcionista], [idUsuario] FROM [recepcionistas]"></asp:SqlDataSource>
+                         <asp:DropDownList ID="recepcionista" runat="server" CssClass="form-control" DataSourceID="SqlDataSource1" DataTextField="nombreCompleto" DataValueField="idUsuario"></asp:DropDownList>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idUsuario], [nombre] + ' ' + [apellido] AS [nombreCompleto] FROM [usuario]"></asp:SqlDataSource>
                         </div>
 
                      
@@ -56,7 +56,7 @@
                             <label>EMPRESA DE TRANSPORTE</label>
                         </div>
                         <div class="form-group">
-                         <asp:DropDownList ID="empresaTransporte" runat="server" CssClass="form-control" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idEmpTransporte"></asp:DropDownList>
+                         <asp:DropDownList ID="empresaTransporte" runat="server" CssClass="form-control" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="idEmpTransporte" AutoPostBack="True"></asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idEmpTransporte], [nombre] FROM [empresasTransporte]"></asp:SqlDataSource>
                         </div>
 
@@ -72,15 +72,23 @@
                         </div>
                         <div class="form-group">
                               
-                          <asp:DropDownList ID="conductor" runat="server" CssClass="form-control" DataSourceID="SqlDataSource3" DataTextField="nombre" DataValueField="idConductor"></asp:DropDownList>
-                            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idConductor], [nombre] FROM [conductores]"></asp:SqlDataSource>
+                          <asp:DropDownList ID="conductor" runat="server" CssClass="form-control" DataSourceID="SqlDataSource3" DataTextField="nombre" DataValueField="idConductor" AutoPostBack="True"></asp:DropDownList>
+                            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idConductor], [nombre] FROM [conductores] WHERE ([idEmpTransporte] = @idEmpTransporte)">
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="empresaTransporte" Name="idEmpTransporte" PropertyName="SelectedValue" Type="Int32" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>
                         </div>
                         <div class="form-group">
                             <label>PATENTE </label>
                         </div>
                         <div class="form-group">
-                             <asp:DropDownList ID="patente" runat="server" CssClass="form-control" DataSourceID="SqlDataSource4" DataTextField="Patente" DataValueField="idCamion"></asp:DropDownList>
-                             <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCamion], [Patente] FROM [camiones]"></asp:SqlDataSource>
+                             <asp:DropDownList ID="patente" runat="server" CssClass="form-control" DataSourceID="SqlDataSource4" DataTextField="Patente" DataValueField="idCamion" AutoPostBack="True"></asp:DropDownList>
+                             <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idCamion], [Patente] FROM [camiones] WHERE ([idEmpTransporte] = @idEmpTransporte)">
+                                 <SelectParameters>
+                                     <asp:ControlParameter ControlID="empresaTransporte" Name="idEmpTransporte" PropertyName="SelectedValue" Type="Int32" />
+                                 </SelectParameters>
+                             </asp:SqlDataSource>
                         </div>
 
                         <div class="form-group">
