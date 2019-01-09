@@ -13,21 +13,30 @@ namespace Capstone5 {
     public partial class WebForm8 {
         
         /// <summary>
-        /// BtnFactura control.
+        /// BtnInicio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnFactura;
+        protected global::System.Web.UI.WebControls.Button BtnInicio;
         
         /// <summary>
-        /// BtnCancelar control.
+        /// BtnImprimir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnCancelar;
+        protected global::System.Web.UI.WebControls.Button BtnImprimir;
+        
+        /// <summary>
+        /// BtnNuevo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnNuevo;
     }
 }

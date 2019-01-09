@@ -12,10 +12,32 @@
             <div class="col-xs-12">
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Lista de Comprobantes de viaje</h3>
+                        <h3 class="box-title">Comprobante de viaje</h3>
                     </div>
                     <div class="box-body table-responsive">
-                        <table id="tbl_empresasTransporte" class="table table-bordered table-hover">
+                        <table id="tabla Informacion" class="table table-bordered table-hover">
+                            <tr>
+                                <th><h4 class="box-body">Punto de inicio:</h4></th>
+                                <th><h4 class="box-body">SERENA</h4></th>
+                            </tr>
+                            <tr>
+                                <th><h4 class="box-body">Parada intermedia:</h4></th>
+                                <th><h4 class="box-body">NO</h4></th>
+                            </tr>
+                            <tr>
+                                <th><h4 class="box-body">Paso por planta:</h4></th>
+                                <th><h4 class="box-body">SI</h4></th>
+                            </tr>
+                            <tr>
+                                <th><h4 class="box-body">Destino:</h4></th>
+                                <th><h4 class="box-body">SANTIAGO</h4></th>
+                            </tr>
+                            <tr>
+                                <th><h4 class="box-body">Tarifa:</h4></th>
+                                <th><h4 class="box-body">$200.000</h4></th>
+                            </tr>
+                        </table>
+                        <!---<table id="tbl_empresasTransporte" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
                                     <th>ID</th>
@@ -29,7 +51,7 @@
                             <tbody id="tbl_body_table">
 
                             </tbody>
-                        </table>
+                        </table>--->
                     </div>
                 </div>
             </div>
@@ -45,11 +67,17 @@
         <div align="center">
                 <table>
                     <tr>
-                        <td> <asp:Button ID="BtnFactura" runat="server" CssClass=" btn btn-primary" Text="Siguiente" Width="200px" OnClick="BtnFactura_Click"/></td>
+                        <td> <asp:Button ID="BtnInicio" runat="server" CssClass="btn btn-github" Text="Volver a inicio" Width="200px" /></td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;
 
                         </td>
-                        <td> <asp:Button ID="BtnCancelar" runat="server" CssClass="btn btn-github" Text="Cancelar" Width="200px" /></td>
+                        <td> <asp:Button ID="BtnImprimir" runat="server" CssClass=" btn btn-primary" Text="Imprimir" Width="200px" OnClick="BtnFactura_Click"/></td>
+
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        </td>
+                        <td> <asp:Button ID="BtnNuevo" runat="server" CssClass=" btn btn-primary" Text="Crear nuevo comprobante" Width="200px" OnClick="BtnFactura_Click"/></td>
+
                     </tr>
                 </table>
         </div>

@@ -205,7 +205,7 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td><asp:DropDownList ID="DropDownList17" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
+      <td><asp:DropDownList ID="DropDownList17" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource25" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores2]"></asp:SqlDataSource>
         </td>
         
@@ -226,7 +226,7 @@
     </tr>
     <tr>
       <th scope="row">2</th>
-       <td><asp:DropDownList ID="DropDownList21" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
+       <td><asp:DropDownList ID="DropDownList21" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource11" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores2]"></asp:SqlDataSource>
         </td>
        <td><asp:DropDownList ID="DropDownList49" runat="server">
@@ -244,7 +244,7 @@
     
     <tr>
       <th scope="row">3</th>
-       <td><asp:DropDownList ID="DropDownList25" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
+       <td><asp:DropDownList ID="DropDownList25" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource13" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores2]"></asp:SqlDataSource>
         </td>
        <td><asp:DropDownList ID="DropDownList26" runat="server">
@@ -267,7 +267,7 @@
     </tr>
        <tr>
       <th scope="row">4</th>
-       <td><asp:DropDownList ID="DropDownList29" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idCliente"></asp:DropDownList>
+       <td><asp:DropDownList ID="DropDownList29" runat="server" DataSourceID="SqlDataSource25" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource15" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProductor], [nombre] FROM [productores2]"></asp:SqlDataSource>
         </td>
        <td><asp:DropDownList ID="DropDownList30" runat="server">
@@ -369,7 +369,7 @@
         
       <tr>
       <th scope="row">3</th>
-       <td><asp:DropDownList ID="DropDownList41" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
+       <td><asp:DropDownList ID="DropDownList41" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProveedor"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource21" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProveedor], [nombre] FROM [proveedores2]"></asp:SqlDataSource>
         </td>
        <td>
@@ -389,7 +389,7 @@
     </tr>
        <tr>
       <th scope="row">4</th>
-       <td><asp:DropDownList ID="DropDownList45" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProductor"></asp:DropDownList>
+       <td><asp:DropDownList ID="DropDownList45" runat="server" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="idProveedor"></asp:DropDownList>
           <asp:SqlDataSource ID="SqlDataSource23" runat="server" ConnectionString="<%$ ConnectionStrings:PRUEBA2ConnectionString %>" SelectCommand="SELECT [idProveedor], [nombre] FROM [proveedores2]"></asp:SqlDataSource>
         </td>
        <td>
